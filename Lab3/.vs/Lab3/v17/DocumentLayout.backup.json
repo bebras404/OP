@@ -1,34 +1,60 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\adoma\\Desktop\\Lab3\\",
+  "WorkspaceRootPath": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|C:\\Users\\adoma\\Desktop\\Lab3\\lab3\\form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|c:\\users\\trinti\\desktop\\rep\\op\\lab3\\lab3\\taskutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\taskutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|C:\\Users\\adoma\\Desktop\\Lab3\\lab3\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|c:\\users\\adoma\\desktop\\lab3\\lab3\\payout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\lab3\\payout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\payout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|C:\\Users\\adoma\\Desktop\\Lab3\\lab3\\input.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\input.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\lab3\\form.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\form.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|C:\\Users\\adoma\\Desktop\\Lab3\\lab3\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\lab3\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|C:\\Users\\adoma\\Desktop\\Lab3\\lab3\\listclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|c:\\users\\trinti\\desktop\\rep\\op\\lab3\\lab3\\formamethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\formamethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|c:\\users\\trinti\\desktop\\rep\\op\\lab3\\lab3\\inoututils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\inoututils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|c:\\users\\trinti\\desktop\\rep\\op\\lab3\\lab3\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\lab3\\listclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\listclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|C:\\Users\\adoma\\Desktop\\Lab3\\lab3\\form.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\form.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\lab3\\input.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\input.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|c:\\users\\trinti\\desktop\\rep\\op\\lab3\\lab3\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|c:\\users\\trinti\\desktop\\rep\\op\\lab3\\lab3\\form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\Users\\trinti\\Desktop\\Lab2 OP\\Lab2_v2\\Utils\\InOutUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\Users\\trinti\\Desktop\\Lab2 OP\\Lab2_v2\\Utils\\TaskUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\lab3\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{58450392-483B-422C-B8FA-B76D33129136}|Lab3\\Lab3.csproj|solutionrelative:lab3\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,98 +64,188 @@
       "DocumentGroups": [
         {
           "DockedHeight": 263,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\Web.config",
+              "RelativeDocumentMoniker": "Lab3\\Web.config",
+              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\Web.config",
+              "RelativeToolTip": "Lab3\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-26T12:03:20.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "FormaMethods.cs",
+              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\FormaMethods.cs",
+              "RelativeDocumentMoniker": "Lab3\\FormaMethods.cs",
+              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\FormaMethods.cs",
+              "RelativeToolTip": "Lab3\\FormaMethods.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T11:19:07.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\adoma\\Desktop\\Lab3\\Lab3\\Employee.cs",
+              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\Employee.cs",
               "RelativeDocumentMoniker": "Lab3\\Employee.cs",
-              "ToolTip": "C:\\Users\\adoma\\Desktop\\Lab3\\Lab3\\Employee.cs",
+              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\Employee.cs",
               "RelativeToolTip": "Lab3\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T13:23:07.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
+              "Title": "Form.aspx",
+              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\Form.aspx",
+              "RelativeDocumentMoniker": "Lab3\\Form.aspx",
+              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\Form.aspx",
+              "RelativeToolTip": "Lab3\\Form.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-07T12:38:19.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InOutUtils.cs",
+              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\InOutUtils.cs",
+              "RelativeDocumentMoniker": "Lab3\\InOutUtils.cs",
+              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\InOutUtils.cs",
+              "RelativeToolTip": "Lab3\\InOutUtils.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAswEQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T11:06:03.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaskUtils.cs",
+              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\TaskUtils.cs",
+              "RelativeDocumentMoniker": "Lab3\\TaskUtils.cs",
+              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\TaskUtils.cs",
+              "RelativeToolTip": "Lab3\\TaskUtils.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAEYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T11:05:46.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InOutUtils.cs",
+              "DocumentMoniker": "c:\\Users\\trinti\\Desktop\\Lab2 OP\\Lab2_v2\\Utils\\InOutUtils.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Lab2 OP\\Lab2_v2\\Utils\\InOutUtils.cs",
+              "ToolTip": "c:\\Users\\trinti\\Desktop\\Lab2 OP\\Lab2_v2\\Utils\\InOutUtils.cs",
+              "RelativeToolTip": "..\\..\\..\\Lab2 OP\\Lab2_v2\\Utils\\InOutUtils.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAAAMwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T11:05:17.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\packages.config",
+              "RelativeDocumentMoniker": "Lab3\\packages.config",
+              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\packages.config",
+              "RelativeToolTip": "Lab3\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-26T10:16:46.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Input.cs",
-              "DocumentMoniker": "C:\\Users\\adoma\\Desktop\\Lab3\\Lab3\\Input.cs",
+              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\Input.cs",
               "RelativeDocumentMoniker": "Lab3\\Input.cs",
-              "ToolTip": "C:\\Users\\adoma\\Desktop\\Lab3\\Lab3\\Input.cs",
+              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\Input.cs",
               "RelativeToolTip": "Lab3\\Input.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAIwAcAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwC4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T13:21:38.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Payout.cs",
-              "DocumentMoniker": "C:\\Users\\adoma\\Desktop\\Lab3\\Lab3\\Payout.cs",
+              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\Payout.cs",
               "RelativeDocumentMoniker": "Lab3\\Payout.cs",
-              "ToolTip": "C:\\Users\\adoma\\Desktop\\Lab3\\Lab3\\Payout.cs",
+              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\Payout.cs",
               "RelativeToolTip": "Lab3\\Payout.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAuwCYAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAFYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T13:04:45.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ListClass.cs",
-              "DocumentMoniker": "C:\\Users\\adoma\\Desktop\\Lab3\\Lab3\\ListClass.cs",
+              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\ListClass.cs",
               "RelativeDocumentMoniker": "Lab3\\ListClass.cs",
-              "ToolTip": "C:\\Users\\adoma\\Desktop\\Lab3\\Lab3\\ListClass.cs",
+              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\ListClass.cs",
               "RelativeToolTip": "Lab3\\ListClass.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T12:44:47.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Form.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\adoma\\Desktop\\Lab3\\Lab3\\Form.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\Form.aspx.cs",
               "RelativeDocumentMoniker": "Lab3\\Form.aspx.cs",
-              "ToolTip": "C:\\Users\\adoma\\Desktop\\Lab3\\Lab3\\Form.aspx.cs",
+              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\Form.aspx.cs",
               "RelativeToolTip": "Lab3\\Form.aspx.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAADwv3IAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T12:41:05.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Styles.css",
-              "DocumentMoniker": "C:\\Users\\adoma\\Desktop\\Lab3\\Lab3\\Styles.css",
-              "RelativeDocumentMoniker": "Lab3\\Styles.css",
-              "ToolTip": "C:\\Users\\adoma\\Desktop\\Lab3\\Lab3\\Styles.css",
-              "RelativeToolTip": "Lab3\\Styles.css",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-07T12:39:50.534Z",
+              "DocumentIndex": 12,
+              "Title": "TaskUtils.cs",
+              "DocumentMoniker": "c:\\Users\\trinti\\Desktop\\Lab2 OP\\Lab2_v2\\Utils\\TaskUtils.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Lab2 OP\\Lab2_v2\\Utils\\TaskUtils.cs",
+              "ToolTip": "c:\\Users\\trinti\\Desktop\\Lab2 OP\\Lab2_v2\\Utils\\TaskUtils.cs",
+              "RelativeToolTip": "..\\..\\..\\Lab2 OP\\Lab2_v2\\Utils\\TaskUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T11:05:17.516Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form.aspx",
-              "DocumentMoniker": "C:\\Users\\adoma\\Desktop\\Lab3\\Lab3\\Form.aspx",
-              "RelativeDocumentMoniker": "Lab3\\Form.aspx",
-              "ToolTip": "C:\\Users\\adoma\\Desktop\\Lab3\\Lab3\\Form.aspx",
-              "RelativeToolTip": "Lab3\\Form.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-07T12:38:19.242Z",
-              "EditorCaption": ""
+              "DocumentIndex": 13,
+              "Title": "Styles.css",
+              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\Styles.css",
+              "RelativeDocumentMoniker": "Lab3\\Styles.css",
+              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\Lab3\\Lab3\\Styles.css",
+              "RelativeToolTip": "Lab3\\Styles.css",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-07T12:39:50.534Z"
             }
           ]
         }

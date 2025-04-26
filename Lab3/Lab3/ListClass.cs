@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Lab3
 {
-    public sealed class ListClass<T> : IEnumerable<T> where T : IComparable<T>
+    public sealed class ListClass<T> : IEnumerable<T> 
     {
         public class Node
         {
@@ -71,7 +71,7 @@ namespace Lab3
             Node current = Head;
             while (current != null)
             {
-                if (current.Data.CompareTo(node) == 0)
+                if (current.Data.Equals(node))
                 {
                     return true;
                 }

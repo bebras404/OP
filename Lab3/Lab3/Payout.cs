@@ -15,7 +15,7 @@ namespace Lab3
         public string Name { get; set; }
         private ListClass<double> BonusCoef { get; }
         private ListClass<double> BonusAmounts { get; }
-        public double Sum { get; set; }
+        public double Sum { get; private set; }
 
         /// <summary>
         /// Constructor for object.
@@ -24,14 +24,14 @@ namespace Lab3
         /// <param name="name">Name of a person.</param>
         /// <param name="bonusCoef">Linked list for all coeficients.</param>
         /// <param name="bonusAmounts">Linked list for bonus amounts.</param>
-        public Payout(string lastname, string name, ListClass<double> bonusCoef, ListClass<double> bonusAmounts, double sum)
+
+        public Payout(string lastname, string name)
         {
             this.LastName = lastname;
             this.Name = name;
-            this.BonusCoef = bonusCoef;
-            this.BonusAmounts = bonusAmounts;
-            this.Sum = sum;
-
+            this.BonusCoef = new ListClass<double>();
+            this.BonusAmounts = new ListClass<double>();
+            this.Sum = 0;
         }
 
         public void StartCoef()
@@ -81,9 +81,9 @@ namespace Lab3
 
         public void AddAmount(double value)
         {
+            Sum += value;
             BonusAmounts.Add(value);
         }
-
 
         /// <summary>
         /// Compares node data.

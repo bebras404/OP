@@ -11,7 +11,7 @@ namespace Lab3
     public class Input
     {
         public int Id { get; set; }
-        private ListClass<double> Bonuses { get; }
+        private ListClass<double> Coef { get; }
 
         /// <summary>
         /// Constructor for object.
@@ -21,32 +21,32 @@ namespace Lab3
         public Input(int id, ListClass<double> bonuses)
         {
             this.Id = id;
-            this.Bonuses = bonuses;
+            this.Coef = bonuses;
         }
 
-        public void Start()
+        public void StartCoef()
         {
-            Bonuses.Start();
+            Coef.Start();
         }
 
-        public bool Exists()
+        public bool ExistsCoef()
         {
-            return Bonuses.Exists();
+            return Coef.Exists();
         }
 
-        public void Next()
+        public void NextCoef()
         {
-            Bonuses.Next();
+            Coef.Next();
         }
 
-        public double Get()
+        public double GetCoef()
         {
-            return Bonuses.Get();
+            return Coef.Get();
         }
 
-        public void Add(double value)
+        public void AddCoef(double value)
         {
-            Bonuses.Add(value);
+            Coef.Add(value);
         }
 
     }
