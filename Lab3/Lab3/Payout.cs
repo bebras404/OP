@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Lab3
 {
-    public class Payout
+    public class Payout : IComparable<Payout>, IEquatable<Payout>
     {
         /// <summary>
         /// Class for Payout object.
@@ -13,9 +13,9 @@ namespace Lab3
 
         public string LastName { get; set; }
         public string Name { get; set; }
-        ListClass<double> BonusCoef { get; }
-        ListClass<double> BonusAmounts { get; }
-        public double Sum { get; set; }//tvarkyti
+        private ListClass<double> BonusCoef { get; }
+        private ListClass<double> BonusAmounts { get; }
+        public double Sum { get; set; }
 
         /// <summary>
         /// Constructor for object.
@@ -98,18 +98,8 @@ namespace Lab3
             }
             return false;
         }
-        /// <summary>
-        /// Calculates the sum of bonuses.
-        /// </summary>
-        public double SumCalc()
-        {
-            double sum = 0;
-            for (BonusAmounts.Start(); BonusAmounts.Exists(); BonusAmounts.Next())
-            {
-                sum += BonusAmounts.Get();
-            }
-            return sum;
-        }
+
+        
         /// <summary>
         /// Compares two node data.
         /// </summary>
@@ -132,8 +122,9 @@ namespace Lab3
             return this.Sum.CompareTo(other.Sum);
         }
 
-
-
-
+        public bool Equals(Payout other)
+        {
+            return this.Name.Equals(other.Name) && this.LastName.Equals(other.LastName);
+        }
     }
 }

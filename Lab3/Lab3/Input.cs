@@ -11,8 +11,7 @@ namespace Lab3
     public class Input
     {
         public int Id { get; set; }
-
-        ListClass<double> Bonuses { get; }
+        private ListClass<double> Bonuses { get; }
 
         /// <summary>
         /// Constructor for object.
@@ -43,11 +42,6 @@ namespace Lab3
         public double Get()
         {
             return Bonuses.Get();
-        }
-
-        public ListClass<double> GetBonuses()
-        {
-            return Bonuses;
         }
 
         public void Add(double value)
