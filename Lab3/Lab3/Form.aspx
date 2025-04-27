@@ -12,13 +12,16 @@
         
         <h1>Premijos</h1>             
             <div>
+                <asp:ValidationSummary ID="Summ" runat="server" CssClass="Summ" />
                 <br />
                 Įkelti darbuotojų sąrašą:<br />
                 <asp:FileUpload ID="FileUpload1" runat="server" />
+                <asp:RequiredFieldValidator ID="Val1" runat="server" ControlToValidate="FileUpload1" ErrorMessage="Prašome įkelti failą!" CssClass="val1"></asp:RequiredFieldValidator>
                 <br />
                 <br />
                 Įkelti premijų sąrašą:<br />
                 <asp:FileUpload ID="FileUpload2" runat="server" />
+                <asp:RequiredFieldValidator ID="Val2" runat="server" ControlToValidate="FileUpload2" ErrorMessage="Prašome įkelti failą!" CssClass="val2"></asp:RequiredFieldValidator>
                 <br />
                 <br />
                 <asp:Button ID="Upload1" runat="server" Text="Įkelti failus ir susikaičiuoti" OnClick="Upload1_Click" />

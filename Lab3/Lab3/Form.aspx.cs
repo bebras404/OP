@@ -35,6 +35,11 @@ namespace Lab3
                 "Bonusas už tema 3", "Bonusas už tema 4", "Bonusų suma" };
             AddHeader(headers, Results);
             AddHeader(headers, LessAvg);
+
+            headers = new string[] { "Pavardė", "Vardas", "Indėlis į tema1",
+                "Indėlis į tema2", "Indėlis į tema3", "Indėlis į tema4", "Bonusas už pasirinktą temą", "Bonusų suma" };
+            AddHeader(headers, PickOut);
+
         }
 
         private void LoadSessionData()
@@ -105,28 +110,47 @@ namespace Lab3
             AddDataFromFile2(contributions);
             ListClass<Payout> payoutsList = TaskUtils.AddToList(contributions, workers);
             ListClass<Payout> payouts = TaskUtils.CalculateBonus(payoutsList, bonuses, contributions);
-            //payouts.Sort();
+            payouts.Sort();
             Session["Payouts"] = payouts;
             AddDataToResultsTable(payouts, Results);
             double avg = TaskUtils.CalculateAveragePayout(payouts);
             ListClass<Payout> LessThanAverage = TaskUtils.LessThanAvarage(payouts, avg);
-           // LessThanAverage.Sort();
-           Session["Less"] = LessThanAverage;
-
+            LessThanAverage.Sort();
+            Session["Less"] = LessThanAverage;
             AddDataToResultsTable(LessThanAverage, LessAvg);
+
+
+            //---Spausdinimas i faila---
+
             string basepath = AppDomain.CurrentDomain.BaseDirectory;
             string filePath = Path.Combine(basepath, "ExternalData.txt");
             if (File.Exists(filePath)) { File.Delete(filePath); }
-            InOutUtils.WriteToFileBonus(filePath, bonuses, "Premijų sumos: ");
-            InOutUtils.WriteToFileWorkers(filePath, workers, "Darbuotojai: ");
-            InOutUtils.WriteToFileInput(filePath, contributions, "Indėliai: ");
-            InOutUtils.WriteToFileCalculations(filePath, payouts, "Išmokėjimai: ");
-            InOutUtils.WriteToFileCalculations(filePath, LessThanAverage, "Darbuotojai uždirbę mažiau nei premijų vidurkis: ");
+            InOutUtils.WriteToFile(filePath, bonuses, "Premijų sumos: ", $"| {"Sumos" ,-10} |", 15);
+            InOutUtils.WriteToFile(filePath, workers, "Darbuotojai: ", $"| {"Asmens kodas",20} |" +
+                $" {"Pavardė",-15} | {"Vardas",-15} | {"Bankas",-15} | {"Banko sąskaita",-20} | ", 100);
+            InOutUtils.WriteToFile(filePath, contributions, "Indėliai: ", $"| {"Asmens kodas",20} | {"Tema1",-15} |" +
+                $" {"Tema2",-15} | {"Tema3",-15} | {"Tema4",-15} | ", 96);
+            InOutUtils.WriteToFile(filePath, payouts, "Išmokėjimai: ", $"| {"Pavardė",20} | {"Vardas",15} | {"Tema1",-15} | {"Tema2",-15} |" +
+                    $" {"Tema3",-15} | {"Tema4",-15} | {"Premija už tema1",-30} | {"Premija už tema2",-30} |" +
+                    $" {"Premija už tema3",-30} | {"Premija už tema4",-30} | {"Suma",-30} |" , 279);
+
+            InOutUtils.WriteToFile(filePath, LessThanAverage, "Darbuotojai uždirbę mažiau nei premijų vidurkis: ", $"| {"Pavardė",20} | {"Vardas",15} | {"Tema1",-15} | {"Tema2",-15} |" +
+                    $" {"Tema3",-15} | {"Tema4",-15} | {"Premija už tema1",-30} | {"Premija už tema2",-30} |" +
+                    $" {"Premija už tema3",-30} | {"Premija už tema4",-30} | {"Suma",-30} |", 279);
+
 
         }
 
         protected void Pick_Click(object sender, EventArgs e)
         {
+            string ParsedTheme = ThemeSelection.Text;
+
+            if (ParsedTheme == "Tema 1" || ParsedTheme == "Tema 2" || ParsedTheme == "Tema 3" || ParsedTheme == "Tema 4") 
+            {
+                ListClass<Payout> filteredByTheme = TaskUtils.FilterByTheme(ParsedTheme, (ListClass<Payout>)Session["Payouts"]);
+                AddDataToResultsTable(filteredByTheme, PickOut);
+            }
+            
 
         }
     }

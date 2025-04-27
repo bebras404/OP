@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 
 namespace Lab3
@@ -13,7 +14,7 @@ namespace Lab3
         /// <param name="inputs">Input coeficients.</param>
         /// <param name="employees">Employees linked list.</param>
         /// <returns>Linked list of payout objects.</returns>
-		public static ListClass<Payout> AddToList(ListClass<Input> inputs, ListClass<Employee> employees)
+		public static ListClass<Payout> AddToList(ListClass<Input> inputs, ListClass<Employee> employees) 
         {
             ListClass<Payout> payoutList = new ListClass<Payout>();
             for (employees.Start(); employees.Exists(); employees.Next())
@@ -52,9 +53,9 @@ namespace Lab3
             payouts.Start();
             while (payouts.Exists())
             {
-                Payout payout = payouts.Get(); // get existing payout, not new one
+                Payout payout = payouts.Get(); 
                 bonuses.Start();
-                payout.StartCoef(); // must start iterating over coefs for this payout
+                payout.StartCoef();
                 int themeNumber = 0;
 
                 while (bonuses.Exists())
@@ -127,6 +128,7 @@ namespace Lab3
             }
             return lessthanaverage;
         }
+
         /// <summary>
         /// Calculates average of a bonus.
         /// </summary>
@@ -144,6 +146,34 @@ namespace Lab3
             }
             return sum / count;
         }
+
+        public static ListClass<Payout> FilterByTheme(string Theme, ListClass<Payout> payouts)
+        {
+            ListClass<Payout> filtered = new ListClass<Payout>();
+
+
+            string[] values = Theme.Split(' ');
+            int value = int.Parse(values[1]) - 1;
+
+            for (payouts.Start(); payouts.Exists(); payouts.Next())
+            {
+                Payout p = new Payout(payouts.Get().LastName, payouts.Get().Name);
+                payouts.Get().StartAmount();
+                for (int i = 0; i < value; i++)
+                {
+                    payouts.Get().NextAmount();
+                }
+                p.AddAmount(payouts.Get().GetAmount());
+                p.Sum = payouts.Get().Sum;
+                for (payouts.Get().StartCoef(); payouts.Get().ExistsCoef(); payouts.Get().NextCoef()) 
+                {
+                    p.AddCoef(payouts.Get().GetCoef());
+                }
+                filtered.Add(p);
+            }
+            return filtered;
+        }
+
 
 
 

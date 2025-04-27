@@ -8,7 +8,7 @@ namespace Lab3
     /// <summary>
     /// Employee object class.
     /// </summary>
-    public class Employee
+    public class Employee : IComparable<Employee>, IEquatable<Employee>
     {
         public int Id { get; set; }
         public string LastName { get; set; }
@@ -40,9 +40,17 @@ namespace Lab3
         /// <returns>Formatted string.</returns>
         public override string ToString()
         {
-            return string.Format($"| {Id,20} | {LastName,-15} | {Name,-15} | {BankName,-15} | {AccountNumber,-20} | ");
+            return string.Format($" {Id,20} | {LastName,-15} | {Name,-15} | {BankName,-15} | {AccountNumber,-20} ");
         }
 
+        public int CompareTo(Employee other)
+        {
+            return this.Id.CompareTo(other.Id);
+        }
 
+        public bool Equals(Employee other)
+        {
+            return this.Id.Equals(other.Id);
+        }
     }
 }

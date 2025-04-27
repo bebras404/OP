@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Lab3
 {
-    public sealed class ListClass<T> : IEnumerable<T> 
+    public sealed class ListClass<T> : IEnumerable<T> where T : IComparable<T>, IEquatable<T>
     {
         public class Node
         {
@@ -80,7 +80,7 @@ namespace Lab3
             return false;
         }
 
-        public void Sort()
+        public void Sort() 
         {
             for (Node outer = Head; outer != null; outer = outer.Link)
             {

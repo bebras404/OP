@@ -114,6 +114,7 @@ namespace Lab3
 
         public void AddDataToResultsTable(ListClass<Payout> payoutlist, Table table)
         {
+
             for (payoutlist.Start(); payoutlist.Exists(); payoutlist.Next())
             {
                 TableRow row = new TableRow();
