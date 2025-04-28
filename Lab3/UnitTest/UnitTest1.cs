@@ -5,22 +5,15 @@ using System.Linq;
 namespace Lab3Tests
 {
     [TestClass]
-    public class ListClassTests
+    public class ListClassTestsEmployee
     {
         private Employee CreateEmployee(int id, string name)
-        {            
-            return new Employee
-            {
-                Id = id,
-                Name = name,
-                LastName = "TestLastName",
-                BankName = "TestBank",
-                AccountNumber = "LT1234567890"
-            };
+        {
+            return new Employee(id, name, "TestLastName", "TestBank", "LT1234567890");
         }
 
         [TestMethod]
-        public void AddTestSingle()
+        public void Add_SingleEmployee_ShouldContainEmployee()
         {
             var list = new ListClass<Employee>();
             var employee = CreateEmployee(1, "Jonas");
@@ -32,7 +25,7 @@ namespace Lab3Tests
         }
 
         [TestMethod]
-        public void AddTestMultiple()
+        public void Add_MultipleEmployees_ShouldContainEmployeesInOrder()
         {
             var list = new ListClass<Employee>();
             var employee1 = CreateEmployee(1, "Jonas");
@@ -52,7 +45,7 @@ namespace Lab3Tests
         }
 
         [TestMethod]
-        public void StartTest()
+        public void Start_ShouldPointToFirstEmployee()
         {
             var list = new ListClass<Employee>();
             var employee = CreateEmployee(1, "Romas");
@@ -63,7 +56,7 @@ namespace Lab3Tests
         }
 
         [TestMethod]
-        public void NextTest()
+        public void Next_ShouldMoveToNextEmployee()
         {
             var list = new ListClass<Employee>();
             var employee1 = CreateEmployee(1, "Tomas");
@@ -78,10 +71,10 @@ namespace Lab3Tests
         }
 
         [TestMethod]
-        public void ExistsTest()
+        public void Exists_ShouldReturnTrue_WhenEmployeeExists()
         {
             var list = new ListClass<Employee>();
-            var employee = CreateEmployee(1, "John");
+            var employee = CreateEmployee(1, "Jonas");
             list.Add(employee);
 
             list.Start();
@@ -89,7 +82,7 @@ namespace Lab3Tests
         }
 
         [TestMethod]
-        public void ExistsTestNull()
+        public void Exists_ShouldReturnFalse_WhenListIsEmpty()
         {
             var list = new ListClass<Employee>();
 
@@ -98,10 +91,10 @@ namespace Lab3Tests
         }
 
         [TestMethod]
-        public void GetTest()
+        public void Get_ShouldReturnCurrentEmployee()
         {
             var list = new ListClass<Employee>();
-            var employee = CreateEmployee(1, "John");
+            var employee = CreateEmployee(1, "Jonas");
             list.Add(employee);
 
             list.Start();
@@ -110,11 +103,11 @@ namespace Lab3Tests
         }
 
         [TestMethod]
-        public void ContainsTestExists()
+        public void Contains_ShouldReturnTrue_WhenEmployeeExists()
         {
             var list = new ListClass<Employee>();
-            var employee1 = CreateEmployee(1, "John");
-            var employee2 = CreateEmployee(2, "Jane");
+            var employee1 = CreateEmployee(1, "Jonas");
+            var employee2 = CreateEmployee(2, "Pranas");
 
             list.Add(employee1);
             list.Add(employee2);
@@ -123,11 +116,11 @@ namespace Lab3Tests
         }
 
         [TestMethod]
-        public void ContainsTestNonexistant()
+        public void Contains_ShouldReturnFalse_WhenEmployeeDoesNotExist()
         {
             var list = new ListClass<Employee>();
-            var employee1 = CreateEmployee(1, "John");
-            var employee2 = CreateEmployee(2, "Jane");
+            var employee1 = CreateEmployee(1, "Jonas");
+            var employee2 = CreateEmployee(2, "Pranas");
 
             list.Add(employee1);
 
@@ -135,12 +128,12 @@ namespace Lab3Tests
         }
 
         [TestMethod]
-        public void SortTest()
+        public void Sort_ShouldSortEmployeesByIdAscending()
         {
             var list = new ListClass<Employee>();
-            var employee1 = CreateEmployee(3, "Doe");
-            var employee2 = CreateEmployee(1, "John");
-            var employee3 = CreateEmployee(2, "Jane");
+            var employee1 = CreateEmployee(3, "Bananas");
+            var employee2 = CreateEmployee(1, "Jonas");
+            var employee3 = CreateEmployee(2, "Pranas");
 
             list.Add(employee1);
             list.Add(employee2);
@@ -157,12 +150,12 @@ namespace Lab3Tests
         }
 
         [TestMethod]
-        public void EnumeratorTest()
+        public void Enumerator_ShouldReturnAllEmployees()
         {
             var list = new ListClass<Employee>();
-            var employee1 = CreateEmployee(1, "John");
-            var employee2 = CreateEmployee(2, "Jane");
-            var employee3 = CreateEmployee(3, "Doe");
+            var employee1 = CreateEmployee(1, "Jonas");
+            var employee2 = CreateEmployee(2, "Pranas");
+            var employee3 = CreateEmployee(3, "Bananas");
 
             list.Add(employee1);
             list.Add(employee2);

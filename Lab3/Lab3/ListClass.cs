@@ -13,10 +13,10 @@ namespace Lab3
         /// <summary>
         /// Node class for linked list.
         /// </summary>
-        public class Node
+        private sealed class Node<T>
         {
             public T Data { get; set; }
-            public Node Link { get; set; }
+            public Node<T> Link { get; set; }
 
             /// <summary>
             /// Constructor for node.
@@ -24,15 +24,15 @@ namespace Lab3
             /// <param name="data">Data to add.</param>
             /// <param name="next">Pointer to next node.</param>
 
-            public Node(T data, Node next)
+            public Node(T data, Node<T> next)
             {
                 this.Data = data;
                 this.Link = next;
             }
         }
 
-        Node Head;
-        Node Current;
+        Node<T> Head;
+        Node<T> Current;
 
         /// <summary>
         /// Constructor for linked list.
@@ -48,7 +48,7 @@ namespace Lab3
         /// <param name="value"></param>
         public void Add(T value)
         {
-            Node newNode = new Node(value, null);
+            Node<T> newNode = new Node<T>(value, null);
 
             if (Head == null)
             {
@@ -56,7 +56,7 @@ namespace Lab3
                 return;
             }
 
-            Node current = Head;
+            Node<T> current = Head;
             while (current.Link != null)
             {
                 current = current.Link;
@@ -101,7 +101,7 @@ namespace Lab3
         /// <returns>True if contains, else false.</returns>
         public bool Contains(T node)
         {
-            Node current = Head;
+            Node<T> current = Head;
             while (current != null)
             {
                 if (current.Data.Equals(node))
@@ -117,10 +117,10 @@ namespace Lab3
         /// </summary>
         public void Sort() 
         {
-            for (Node outer = Head; outer != null; outer = outer.Link)
+            for (Node<T> outer = Head; outer != null; outer = outer.Link)
             {
-                Node min = outer;
-                for (Node inner = outer.Link; inner != null; inner = inner.Link)
+                Node<T> min = outer;
+                for (Node<T> inner = outer.Link; inner != null; inner = inner.Link)
                 {
                     if (inner.Data.CompareTo(min.Data) < 0)
                     {
@@ -142,7 +142,7 @@ namespace Lab3
         /// <returns></returns>
         public IEnumerator<T> GetEnumerator()
         {
-            Node current = Head;
+            Node<T> current = Head;
             while (current != null)
             {
                 yield return current.Data;

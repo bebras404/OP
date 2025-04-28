@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Lab3.Employee" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAQEgAAAAAQAAAgAAAAAABAAAAAAAAg=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lab3.Forma" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAiAAEAASAgACAAAIAABAAEKAAAAGCABEAIAIYBCAA=</HashCode>
+      <FileName>Form.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab3.InOutUtils" Collapsed="true">
+    <Position X="4.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAEBAAAQAAAAAA=</HashCode>
+      <FileName>InOutUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lab3.Input" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAQEgAgUAAAAAAIAAAAAAAAAAAAADAA=</HashCode>
+      <FileName>Input.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lab3.ListClass&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAAAAAACAAAJBAAACQAAAAAAAAAAAEAAAAAAEQAAA=</HashCode>
+      <FileName>ListClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lab3.Payout" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAQFoAgQCAQAAAIIAAAAAABAAAAADAw=</HashCode>
+      <FileName>Payout.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Lab3.TaskUtils" Collapsed="true">
+    <Position X="1" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAEBAIAAAAEAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TaskUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
