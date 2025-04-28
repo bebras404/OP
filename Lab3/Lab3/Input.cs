@@ -24,40 +24,79 @@ namespace Lab3
             this.Coef = bonuses;
         }
 
+        /// <summary>
+        /// Starts the linked list for coeficients.
+        /// </summary>
+
         public void StartCoef()
         {
             Coef.Start();
         }
+
+        /// <summary>
+        /// Checks if the linked list for coeficients exists.
+        /// </summary>
+        /// <returns>True or false depening on existance of a value.</returns>
 
         public bool ExistsCoef()
         {
             return Coef.Exists();
         }
 
+        /// <summary>
+        /// Moves to the next coeficient in the linked list.
+        /// </summary>
+
         public void NextCoef()
         {
             Coef.Next();
         }
+
+        /// <summary>
+        /// Gets the current coeficient from the linked list.
+        /// </summary>
+        /// <returns>Gets node data.</returns>
 
         public double GetCoef()
         {
             return Coef.Get();
         }
 
+        /// <summary>
+        /// Adds a coeficient to the linked list.
+        /// </summary>
+        /// <param name="value">Value to add.</param>
+
         public void AddCoef(double value)
         {
             Coef.Add(value);
         }
+
+        /// <summary>
+        /// Compares two Input objects by Id.
+        /// </summary>
+        /// <param name="other">Other Input object.</param>
+        /// <returns></returns>
 
         public int CompareTo(Input other)
         {
             return this.Id.CompareTo(other.Id);
         }
 
+        /// <summary>
+        /// Compares two Input objects by Id.
+        /// </summary>
+        /// <param name="other">Other Input object.</param>
+        /// <returns>True or false depending on values.</returns>
         public bool Equals(Input other)
         {
             return this.Id.Equals(other.Id);
         }
+
+        /// <summary>
+        /// ToString override for formatting.
+        /// </summary>
+        /// <returns>Foramted string</returns>
 
         public override string ToString()
         {

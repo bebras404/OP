@@ -33,52 +33,78 @@ namespace Lab3
             this.BonusAmounts = new ListClass<double>();
             this.Sum = 0;
         }
-
+        /// <summary>
+        /// Adds a coeficient to the linked list.
+        /// </summary>
         public void StartCoef()
         {
             BonusCoef.Start();
         }
-
+        /// <summary>
+        /// Checks if the linked list for coeficients exists.
+        /// </summary>
+        /// <returns></returns>
         public bool ExistsCoef()
         {
             return BonusCoef.Exists();
         }
-
+        /// <summary>
+        /// Moves to the next coeficient in the linked list.
+        /// </summary>
         public void NextCoef()
         {
             BonusCoef.Next();
         }
-
+        /// <summary>
+        /// Gets the current coeficient from the linked list.
+        /// </summary>
+        /// <returns></returns>
         public double GetCoef()
         {
             return BonusCoef.Get();
         }
-
+        /// <summary>
+        /// Adds a coeficient to the linked list.
+        /// </summary>
+        /// <param name="value"></param>
         public void AddCoef(double value)
         {
             BonusCoef.Add(value);
         }
-
+        /// <summary>
+        /// Adds a bonus amount to the linked list.
+        /// </summary>
         public void StartAmount()
         {
             BonusAmounts.Start();
         }
-
+        /// <summary>
+        /// Checks if the linked list for bonus amounts exists.
+        /// </summary>
+        /// <returns></returns>
         public bool ExistsAmount()
         {
             return BonusAmounts.Exists();
         }
-
+        /// <summary>
+        /// Moves to the next bonus amount in the linked list.
+        /// </summary>
         public void NextAmount()
         {
             BonusAmounts.Next();
         }
-
+        /// <summary>
+        /// Gets the current bonus amount from the linked list.
+        /// </summary>
+        /// <returns></returns>
         public double GetAmount()
         {
             return BonusAmounts.Get();
         }
-
+        /// <summary>
+        /// Adds a bonus amount to the linked list.
+        /// </summary>
+        /// <param name="value"></param>
         public void AddAmount(double value)
         {
             Sum += value;
@@ -121,12 +147,19 @@ namespace Lab3
 
             return this.Sum.CompareTo(other.Sum);
         }
-
+        /// <summary>
+        /// Checks if two node data are equal.
+        /// </summary>
+        /// <param name="other">Other Payout node.</param>
+        /// <returns></returns>
         public bool Equals(Payout other)
         {
             return this.Name.Equals(other.Name) && this.LastName.Equals(other.LastName);
         }
-
+        /// <summary>
+        /// ToString override for formatting.
+        /// </summary>
+        /// <returns>Formated string.</returns>
         public override string ToString()
         {
             BonusCoef.Start();

@@ -28,7 +28,7 @@ namespace Lab3
 
 
         /// <summary>
-        /// Adds all data to table.
+        /// Adds bonus data to the table.
         /// </summary>
         /// <param name="bonuses">Linked list from which data is added from.</param>
 
@@ -46,7 +46,7 @@ namespace Lab3
         }
 
         /// <summary>
-        /// Adds all data to table.
+        /// Adds employee data to the table.
         /// </summary>
         /// <param name="workers">Linked list from which data is added from.</param>
 
@@ -81,7 +81,7 @@ namespace Lab3
         }
 
         /// <summary>
-        /// Adds all data to table.
+        /// Adds input data to the table.
         /// </summary>
         /// <param name="conts">Linked list from which data is added from.</param>
 

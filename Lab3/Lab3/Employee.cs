@@ -17,6 +17,10 @@ namespace Lab3
         public string AccountNumber { get; set; }
 
         /// <summary>
+        /// Default constructor for object.
+        /// </summary>
+        public Employee() { }
+        /// <summary>
         /// Constructor for object.
         /// </summary>
         /// <param name="id">Id of a person.</param>
@@ -43,10 +47,21 @@ namespace Lab3
             return string.Format($" {Id,20} | {LastName,-15} | {Name,-15} | {BankName,-15} | {AccountNumber,-20} ");
         }
 
+        /// <summary>
+        /// Compares two Employee objects by Id.
+        /// </summary>
+        /// <param name="other">other Employee object.</param>
+        /// <returns>-1 ,0 or 1 depending on comparison the values</returns>
         public int CompareTo(Employee other)
         {
             return this.Id.CompareTo(other.Id);
         }
+
+        /// <summary>
+        /// Compares two Employee objects by Id.
+        /// </summary>
+        /// <param name="other">other Employee object</param>
+        /// <returns>true or false depending on the values</returns>
 
         public bool Equals(Employee other)
         {

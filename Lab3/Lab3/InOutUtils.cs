@@ -12,6 +12,15 @@ namespace Lab3
     /// </summary>
     static class InOutUtils
     {
+        /// <summary>
+        /// Generic method that writes to a file.
+        /// </summary>
+        /// <typeparam name="T">Generic object type from the project.</typeparam>
+        /// <param name="fileName">File to write to.</param>
+        /// <param name="List">Generic list to write from.</param>
+        /// <param name="Header">Header line for the table.</param>
+        /// <param name="TableHeader">Table header.</param>
+        /// <param name="ws">Spaces for '-' symbol.</param>
         public static void WriteToFile<T>(string fileName, IEnumerable<T> List, string Header, string TableHeader, int ws) where T : IEquatable<T>, IComparable<T>
         {
             using (StreamWriter writer = File.AppendText(fileName))

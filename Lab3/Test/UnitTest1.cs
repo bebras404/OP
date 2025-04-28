@@ -1,3 +1,4 @@
+using Xunit;
 namespace Lab3.Tests
 {
     public class ListClassTests

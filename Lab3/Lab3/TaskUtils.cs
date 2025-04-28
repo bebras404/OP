@@ -83,7 +83,7 @@ namespace Lab3
         }
 
         /// <summary>
-        /// Calculates sum of coeficiens for each theme.
+        /// Calculates sum of coeficients for each theme.
         /// </summary>
         /// <param name="inputs">Input coeficients.</param>
         /// <param name="themeNumber">Theme number.</param>
@@ -146,7 +146,12 @@ namespace Lab3
             }
             return sum / count;
         }
-
+        /// <summary>
+        /// Filters payout objects by theme.
+        /// </summary>
+        /// <param name="Theme">Theme selected.</param>
+        /// <param name="payouts">Linked list with all objects.</param>
+        /// <returns>Payout linkedlist with only amount of selected theme.</returns>
         public static ListClass<Payout> FilterByTheme(string Theme, ListClass<Payout> payouts)
         {
             ListClass<Payout> filtered = new ListClass<Payout>();

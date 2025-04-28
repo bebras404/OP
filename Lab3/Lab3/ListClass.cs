@@ -4,12 +4,25 @@ using System.Collections.Generic;
 
 namespace Lab3
 {
+    /// <summary>
+    /// Class for linked list.
+    /// </summary>
+    /// <typeparam name="T">Generic object type.</typeparam>
     public sealed class ListClass<T> : IEnumerable<T> where T : IComparable<T>, IEquatable<T>
     {
+        /// <summary>
+        /// Node class for linked list.
+        /// </summary>
         public class Node
         {
             public T Data { get; set; }
             public Node Link { get; set; }
+
+            /// <summary>
+            /// Constructor for node.
+            /// </summary>
+            /// <param name="data">Data to add.</param>
+            /// <param name="next">Pointer to next node.</param>
 
             public Node(T data, Node next)
             {
@@ -21,12 +34,18 @@ namespace Lab3
         Node Head;
         Node Current;
 
+        /// <summary>
+        /// Constructor for linked list.
+        /// </summary>
         public ListClass()
         {
             Head = null;
             Current = null;
         }
-
+        /// <summary>
+        /// Adds a new node to the end of the linked list.
+        /// </summary>
+        /// <param name="value"></param>
         public void Add(T value)
         {
             Node newNode = new Node(value, null);
@@ -45,27 +64,41 @@ namespace Lab3
 
             current.Link = newNode;
         }
-
+        /// <summary>
+        /// Starts the linked list.
+        /// </summary>
         public void Start()
         {
             Current = Head;
         }
-
+        /// <summary>
+        /// Moves to the next node in the linked list.
+        /// </summary>
         public void Next()
         {
             Current = Current.Link;
         }
-
+        /// <summary>
+        /// Checks if the current node exists.
+        /// </summary>
+        /// <returns>True if exists, else false.</returns>
         public bool Exists()
         {
             return Current != null;
         }
-
+        /// <summary>
+        /// Gets the current node data.
+        /// </summary>
+        /// <returns>Data of a node.</returns>
         public T Get()
         {
             return Current.Data;
         }
-
+        /// <summary>
+        /// Adds a new node to the start of the linked list.
+        /// </summary>
+        /// <param name="node">Node to check.</param>
+        /// <returns>True if contains, else false.</returns>
         public bool Contains(T node)
         {
             Node current = Head;
@@ -79,7 +112,9 @@ namespace Lab3
             }
             return false;
         }
-
+        /// <summary>
+        /// Sorts the linked list using selection sort.
+        /// </summary>
         public void Sort() 
         {
             for (Node outer = Head; outer != null; outer = outer.Link)
@@ -101,7 +136,10 @@ namespace Lab3
                 }
             }
         }
-
+        /// <summary>
+        /// Gets the count of nodes in the linked list.
+        /// </summary>
+        /// <returns></returns>
         public IEnumerator<T> GetEnumerator()
         {
             Node current = Head;
@@ -111,7 +149,10 @@ namespace Lab3
                 current = current.Link;
             }
         }
-
+        /// <summary>
+        /// Gets the count of nodes in the linked list.
+        /// </summary>
+        /// <returns></returns>
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
