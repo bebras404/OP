@@ -9,7 +9,7 @@ namespace Lab3Tests
     {
         private Employee CreateEmployee(int id, string name)
         {
-            return new Employee(id, name, "TestLastName", "TestBank", "LT1234567890");
+            return new Employee(id, name, "TestLastName", "TestBank", "LT123456789");
         }
 
         [TestMethod]

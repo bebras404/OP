@@ -1,10 +1,10 @@
 1;Petrauskas;Jonas;Swedbank;LT257044012345678901
-2;Kazlauskienė;Asta;SEB;LT137044000123456789
+10;Kazlauskienė;Asta;SEB;LT137044000123456789
 3;Jankauskas;Darius;Luminor;LT427044012345678902
-4;Bružaitė;Eglė;Šiaulių bankas;LT737044012345678903
+8;Bružaitė;Eglė;Šiaulių bankas;LT737044012345678903
 5;Urbonas;Paulius;Citadele;LT217044012345678904
 6;Žemaitienė;Gabija;Swedbank;LT837044012345678905
-7;Kavaliauskas;Mantas;SEB;LT147044012345678906
-8;Šimkutė;Laura;Luminor;LT357044012345678907
+11;Kavaliauskas;Mantas;SEB;LT147044012345678906
+7;Šimkutė;Laura;Luminor;LT357044012345678907
 9;Rimkus;Tomas;Šiaulių bankas;LT567044012345678908
-10;Grigaitė;Viktorija;Citadele;LT677044012345678909
+14;Grigaitė;Viktorija;Citadele;LT677044012345678909
