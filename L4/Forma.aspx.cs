@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -16,6 +17,16 @@ namespace L4
 
         protected void Upload_Click(object sender, EventArgs e)
         {
+            string folderPath = Server.MapPath("~/Files"); 
+            DirectoryInfo dir = new DirectoryInfo(folderPath);
+            foreach (FileInfo file in dir.GetFiles("*.txt"))
+            {
+                string filePath = file.FullName;
+                Agency agency = InOutUtils.ReadAgency(filePath);
+                Session["Agency"]
+            }
+
+
 
         }
     }

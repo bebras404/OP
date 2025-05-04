@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|c:\\users\\trinti\\desktop\\rep\\op\\l4\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|c:\\users\\trinti\\desktop\\rep\\op\\l4\\forma.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:forma.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|c:\\users\\trinti\\desktop\\rep\\op\\l4\\taskutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:taskutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|c:\\users\\trinti\\desktop\\rep\\op\\l4\\forma.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:forma.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|c:\\users\\trinti\\desktop\\rep\\op\\l4\\inoututils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:inoututils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|c:\\users\\trinti\\desktop\\rep\\op\\l4\\agency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:agency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|c:\\users\\trinti\\desktop\\rep\\op\\l4\\formamethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:formamethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|c:\\users\\trinti\\desktop\\rep\\op\\l4\\realestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:realestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|c:\\users\\trinti\\desktop\\rep\\op\\l4\\taskutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:taskutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|c:\\users\\trinti\\desktop\\rep\\op\\l4\\agency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:agency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|c:\\users\\trinti\\desktop\\rep\\op\\l4\\inoututils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:inoututils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|c:\\users\\trinti\\desktop\\rep\\op\\l4\\flat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,32 +51,47 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Styles.css",
-              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\Styles.css",
-              "RelativeDocumentMoniker": "Styles.css",
-              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\Styles.css",
-              "RelativeToolTip": "Styles.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-04T13:22:52.071Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Forma.aspx",
-              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\Forma.aspx",
-              "RelativeDocumentMoniker": "Forma.aspx",
-              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\Forma.aspx",
-              "RelativeToolTip": "Forma.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-05-04T12:57:13.468Z",
+              "Title": "Forma.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\Forma.aspx.cs",
+              "RelativeDocumentMoniker": "Forma.aspx.cs",
+              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\Forma.aspx.cs",
+              "RelativeToolTip": "Forma.aspx.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:30:03.337Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Forma.aspx",
+              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\Forma.aspx",
+              "RelativeDocumentMoniker": "Forma.aspx",
+              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\Forma.aspx",
+              "RelativeToolTip": "Forma.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-05-04T12:57:13.468Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormaMethods.cs",
+              "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\FormaMethods.cs",
+              "RelativeDocumentMoniker": "FormaMethods.cs",
+              "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\FormaMethods.cs",
+              "RelativeToolTip": "FormaMethods.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T13:30:57.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "InOutUtils.cs",
               "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\InOutUtils.cs",
               "RelativeDocumentMoniker": "InOutUtils.cs",
@@ -85,7 +104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "TaskUtils.cs",
               "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\TaskUtils.cs",
               "RelativeDocumentMoniker": "TaskUtils.cs",
@@ -98,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "House.cs",
               "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\House.cs",
               "RelativeDocumentMoniker": "House.cs",
@@ -111,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Flat.cs",
               "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\Flat.cs",
               "RelativeDocumentMoniker": "Flat.cs",
@@ -137,13 +156,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Agency.cs",
               "DocumentMoniker": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\Agency.cs",
               "RelativeDocumentMoniker": "Agency.cs",
               "ToolTip": "C:\\Users\\trinti\\Desktop\\Rep\\OP\\L4\\Agency.cs",
               "RelativeToolTip": "Agency.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABwAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAuwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T11:25:56.003Z",
               "EditorCaption": ""

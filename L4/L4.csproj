@@ -81,6 +81,9 @@
     <Compile Include="Forma.aspx.designer.cs">
       <DependentUpon>Forma.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FormaMethods.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="House.cs" />
     <Compile Include="InOutUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
