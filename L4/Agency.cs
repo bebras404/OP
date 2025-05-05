@@ -9,6 +9,9 @@ using System.Xml;
 
 namespace L4
 {
+    /// <summary>
+    /// A real estate agency.
+    /// </summary>
     public class Agency : IEnumerable<RealEstate>
     {
         public string Name { get; private set; }
@@ -17,6 +20,12 @@ namespace L4
 
         private List<RealEstate> realEstates;
 
+        /// <summary>
+        /// Creates an agency with name, address, and phone number.
+        /// </summary>
+        /// <param name="name">Agency name.</param>
+        /// <param name="adress">Agency address.</param>
+        /// <param name="phoneNumber">Agency phone number.</param>
         public Agency(string name, string adress, int phoneNumber)
         {
             this.Name = name;
@@ -24,52 +33,52 @@ namespace L4
             this.PhoneNumber = phoneNumber;
             this.realEstates = new List<RealEstate>();
         }
-
+        /// <summary>
+        /// Creates an empty agency.
+        /// </summary>
         public Agency()
         {
             this.realEstates = new List<RealEstate>();
         }
-
+        /// <summary>
+        /// Adds a real estate to the agency.
+        /// </summary>
+        /// <param name="re">Real estate to add.</param>
         public void Add(RealEstate re)
         {
             realEstates.Add(re);
         }
-
+        /// <summary>
+        /// Removes a real estate from the agency.
+        /// </summary>
+        /// <param name="re">Real estate to remove.</param>
         public void Remove(RealEstate re)
         {
             realEstates.Remove(re);
         }
-
+        /// <summary>
+        /// Gets a real estate by its position in the list.
+        /// </summary>
+        /// <param name="index">Position in the list.</param>
+        /// <returns>The real estate at the position.</returns>
         public RealEstate Get(int index)
         {
-
-
             return realEstates[index];
-
-
-
         }
-
+        /// <summary>
+        /// Counts the real estates in the agency.
+        /// </summary>
+        /// <returns>Number of real estates.</returns>
         public int Count()
         {
             return realEstates.Count;
         }
 
-        public void RemoveDublicates()
-        {
-            for (int i = 0; i < realEstates.Count; i++)
-            {
-                for (int j = 0; j < realEstates.Count; j++)
-                {
-                    if (realEstates[i].Equals(realEstates[j]))
-                    {
-                        realEstates.RemoveAt(j);
-                    }
-                }
-            }
-
-        }
-
+        /// <summary>
+        /// Checks if the agency has a specific real estate.
+        /// </summary>
+        /// <param name="estate">Real estate to check.</param>
+        /// <returns>True if found, otherwise false.</returns>
         public bool Contains(RealEstate estate)
         {
             foreach (RealEstate curr in realEstates)
@@ -82,19 +91,10 @@ namespace L4
             return false;
         }
 
-        public int CountStreets(string street)
-        {
-            int count = 0;
-            foreach (var realEstate in realEstates)
-            {
-                if (realEstate.Street == street)
-                {
-                    count++;
-                }
-            }
-            return count;
-        }
-
+        /// <summary>
+        /// Finds the oldest real estate in the agency.
+        /// </summary>
+        /// <returns>Year of the oldest real estate.</returns>
         public int FindMinAge()
         {
             int minAge = 9999;
@@ -107,7 +107,12 @@ namespace L4
             }
             return minAge;
         }
-
+        /// <summary>
+        /// Combines two agencies into one.
+        /// </summary>
+        /// <param name="a1">First agency.</param>
+        /// <param name="a2">Second agency.</param>
+        /// <returns>New agency with all real estates.</returns>
         public static Agency operator +(Agency a1, Agency a2)
         {
             Agency newAgency = new Agency();
@@ -121,7 +126,9 @@ namespace L4
             }
             return newAgency;
         }
-
+        /// <summary>
+        /// Sorts the real estates in the agency.
+        /// </summary>
         public void BubbleSort()
         {
             int n = realEstates.Count();
@@ -147,7 +154,10 @@ namespace L4
             }
         }
 
-
+        /// <summary>
+        /// Allows looping through the real estates.
+        /// </summary>
+        /// <returns>Enumerator for real estates.</returns>
         public IEnumerator<RealEstate> GetEnumerator()
         {
             foreach (var realEstate in realEstates)
@@ -155,7 +165,10 @@ namespace L4
                 yield return realEstate;
             }
         }
-
+        /// <summary>
+        /// Allows looping through the real estates.
+        /// </summary>
+        /// <returns>Enumerator for real estates.</returns>
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();

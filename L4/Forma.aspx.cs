@@ -12,7 +12,17 @@ namespace L4
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (File.Exists(Server.MapPath("~/ExternalData.txt"))) { File.Delete(Server.MapPath("~/ExternalData.txt")); }
+            try
+            {
+                if (File.Exists(Server.MapPath("~/ExternalData.txt")))
+                {
+                    File.Delete(Server.MapPath("~/ExternalData.txt"));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox(this, $"Klaida ištrinant failą: {ex.Message}");
+            }
         }
 
         protected void Upload_Click(object sender, EventArgs e)
@@ -25,9 +35,9 @@ namespace L4
             {
                 filePaths = Directory.GetFiles(Server.MapPath(folderPath), "*.txt");
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox(this, $"Nepavyko gauti failų iš aplanko: {folderPath}");
+                MessageBox(this, $"Nepavyko gauti failų iš aplanko: {folderPath}. Klaida: {ex.Message}");
                 return;
             }
 
@@ -42,58 +52,92 @@ namespace L4
                 }
                 catch (Exception ex)
                 {
-                    MessageBox(this, $"Klaida: " + ex.Message);
+                    MessageBox(this, $"Klaida skaitant failą {Path.GetFileName(path)}: {ex.Message}");
                     continue;
                 }
 
                 try
                 {
                     LoadDataToTable(data, form1, $"Duomenys iš failo: {Path.GetFileName(path)}");
-                    
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    MessageBox(this, $"Nepavyko atvaizduoti duomenų iš failo:\n{Path.GetFileName(path)}");
-                    
+                    MessageBox(this, $"Klaida įkeliant duomenis į lentelę: {ex.Message}");
                 }
 
-                agencies[count] = data;
-                count++;
+                try
+                {
+                    agencies[count] = data;
+                    count++;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox(this, $"Klaida pridedant agentūrą į masyvą: {ex.Message}");
+                    continue;
+                }
 
                 try
                 {
                     InOutUtils.WriteToExternalData(Server.MapPath("~/ExternalData.txt"), data, "Nuskaityti duomenys:");
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    MessageBox(this, $"Nepavyko įrašyti duomenų iš failo:\n{Path.GetFileName(path)} į išorinį failą.");
+                    MessageBox(this, $"Nepavyko įrašyti duomenų iš failo {Path.GetFileName(path)} į išorinį failą. Klaida: {ex.Message}");
                     continue;
                 }
             }
 
-            Dictionary<string, int> mostCommonStreetEstates = TaskUtils.PutToDicti(agencies);
-            int MaxCount = TaskUtils.FindMaxStreetCount(mostCommonStreetEstates);
-            mostCommonStreetEstates = TaskUtils.PickOutCommonStreets(mostCommonStreetEstates, MaxCount);
-            LoadMostCommonStreet(mostCommonStreetEstates, form1);
-            InOutUtils.WriteToExternalDataDics(Server.MapPath("~/ExternalData.txt"), mostCommonStreetEstates, "Dažniausiai pasikartojančios gatvės: ");
+            try
+            {
+                Dictionary<string, int> mostCommonStreetEstates = TaskUtils.PutToDicti(agencies);
+                int MaxCount = TaskUtils.FindMaxStreetCount(mostCommonStreetEstates);
+                mostCommonStreetEstates = TaskUtils.PickOutCommonStreets(mostCommonStreetEstates, MaxCount);
+                LoadMostCommonStreet(mostCommonStreetEstates, form1);
+                InOutUtils.WriteToExternalDataDics(Server.MapPath("~/ExternalData.txt"), mostCommonStreetEstates, "Dažniausiai pasikartojančios gatvės: ");
+            }
+            catch (Exception ex)
+            {
+                MessageBox(this, $"Klaida apdorojant dažniausiai pasikartojančias gatves: {ex.Message}");
+            }
 
-            int minAge = TaskUtils.MinAgeForAll(agencies);
-            Agency oldestEstates = TaskUtils.PickOutOldest(agencies, minAge);
-            LoadDataToTable(oldestEstates, form1, "Seniausi objektai");
-            InOutUtils.WriteToExternalData(Server.MapPath("~/ExternalData.txt"), oldestEstates, "Seniausi objektai: ");
+            try
+            {
+                int minAge = TaskUtils.MinAgeForAll(agencies);
+                Agency oldestEstates = TaskUtils.PickOutOldest(agencies, minAge);
+                LoadDataToTable(oldestEstates, form1, "Seniausi objektai");
+                InOutUtils.WriteToExternalData(Server.MapPath("~/ExternalData.txt"), oldestEstates, "Seniausi objektai: ");
+            }
+            catch (Exception ex)
+            {
+                MessageBox(this, $"Klaida apdorojant seniausius objektus: {ex.Message}");
+            }
 
-            Agency FusedAgencies = TaskUtils.FuseAgencies(agencies);
-            Agency InAllAgencies = TaskUtils.FindInMultipleAgencies(FusedAgencies);
-            InAllAgencies.BubbleSort();
-            LoadDataToTable(InAllAgencies, form1, "Objektai kurie yra daugiau nei vienoje agentūroje");
-            InOutUtils.WriteToExternalData(Server.MapPath("~/ExternalData.txt"), InAllAgencies, "Objektai kurie yra daugiau nei vienoje agentūroje: ");
-            InOutUtils.WriteToCSV(InAllAgencies, Server.MapPath("~/AgencyData/Kartojasi.csv"), "Objektai kurie yra daugiau nei vienoje agentūroje");
+            try
+            {
+                Agency FusedAgencies = TaskUtils.FuseAgencies(agencies);
+                Agency InAllAgencies = TaskUtils.FindInMultipleAgencies(FusedAgencies);
+                InAllAgencies.BubbleSort();
+                LoadDataToTable(InAllAgencies, form1, "Objektai kurie yra daugiau nei vienoje agentūroje");
+                InOutUtils.WriteToExternalData(Server.MapPath("~/ExternalData.txt"), InAllAgencies, "Objektai kurie yra daugiau nei vienoje agentūroje: ");
+                InOutUtils.WriteToCSV(InAllAgencies, Server.MapPath("~/AgencyData/Kartojasi.csv"), "Objektai kurie yra daugiau nei vienoje agentūroje");
+            }
+            catch (Exception ex)
+            {
+                MessageBox(this, $"Klaida apdorojant objektus, kurie yra daugiau nei vienoje agentūroje: {ex.Message}");
+            }
 
-            Agency Large = TaskUtils.LargeObjs(agencies);
-            Large.BubbleSort();
-            LoadDataToTable(Large, form1, "Dideli objektai");
-            InOutUtils.WriteToCSV(Large, Server.MapPath("~/AgencyData/Dideli.csv"), "Dideli objektai");
-            InOutUtils.WriteToExternalData(Server.MapPath("~/ExternalData.txt"), Large, "Dideli objektai: ");
+            try
+            {
+                Agency Large = TaskUtils.LargeObjs(agencies);
+                Large.BubbleSort();
+                LoadDataToTable(Large, form1, "Dideli objektai");
+                InOutUtils.WriteToCSV(Large, Server.MapPath("~/AgencyData/Dideli.csv"), "Dideli objektai");
+                InOutUtils.WriteToExternalData(Server.MapPath("~/ExternalData.txt"), Large, "Dideli objektai: ");
+            }
+            catch (Exception ex)
+            {
+                MessageBox(this, $"Klaida apdorojant didelius objektus: {ex.Message}");
+            }
         }
     }
 }   

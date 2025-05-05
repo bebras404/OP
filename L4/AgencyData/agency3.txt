@@ -5,4 +5,4 @@ Klaipėda;Bandužiai;Smiltelės g.;18;Butas;2000;54;2;1
 Klaipėda;Centras;H. Manto g.;22;Butas;1990;67;3;2
 Klaipėda;Smeltė;Gintaro g.;5;Kotedžas;2018;200;6;Geoterminis
 Klaipėda;Bandužiai;Smiltelės g.;20;Butas;2001;60;2;3
-Klaipėda;Lypkiai;Naikupės g.;40;Kotedžas;2010;155;5;Dujinis
+Klaipėda;Lypk

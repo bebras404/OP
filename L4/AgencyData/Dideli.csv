@@ -1,5 +1,4 @@
 ﻿Dideli objektai
-Miestas,Rajonas,Gatvė,Namo numeris,Tipas,Pastatymo metai,Plotas,Kambarių skaičius,Šildymo tipas,Aukštas
-Vilnius,Naujamiestis,Vytenio g.,22,Kotedžas,2015,205,6,Dujinis,-
+City,District,Street,House Number,Type,Build Year,Area,Number of Rooms,Heating Type,Floor
 Vilnius,Antakalnis,Smiltelės g.,5,Butas,2009,91,4,-,4
-Vilnius,Šilainiai,Aauja g.,30,Kotedžas,2005,201,5,Malkos,-
+Vilnius,Naujamiestis,Vytenio g.,22,Kotedžas,2015,205,6,Dujinis,-
