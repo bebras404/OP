@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\adoma\\Desktop\\OP\\L4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|C:\\Users\\adoma\\Desktop\\OP\\L4\\forma.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:forma.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|c:\\users\\adoma\\desktop\\op\\l4\\forma.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:forma.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|C:\\Users\\adoma\\Desktop\\OP\\L4\\formamethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:formamethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|C:\\Users\\adoma\\Desktop\\OP\\L4\\inoututils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:inoututils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|C:\\Users\\adoma\\Desktop\\OP\\L4\\agency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:agency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|C:\\Users\\adoma\\Desktop\\OP\\L4\\taskutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:taskutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|C:\\Users\\adoma\\Desktop\\OP\\L4\\realestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:realestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|C:\\Users\\adoma\\Desktop\\OP\\L4\\forma.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:forma.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|C:\\Users\\adoma\\Desktop\\OP\\L4\\flat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:flat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|C:\\Users\\adoma\\Desktop\\OP\\L4\\taskutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:taskutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|C:\\Users\\adoma\\Desktop\\OP\\L4\\formamethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:formamethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|C:\\Users\\adoma\\Desktop\\OP\\L4\\house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|C:\\Users\\adoma\\Desktop\\OP\\L4\\inoututils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|solutionrelative:inoututils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FA1BA06-1518-45AA-AB11-E666122BBEF7}|L4.csproj|c:\\users\\adoma\\desktop\\op\\l4\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -50,17 +50,17 @@
       "DocumentGroups": [
         {
           "DockedHeight": 263,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Forma.aspx.cs",
               "DocumentMoniker": "C:\\Users\\adoma\\Desktop\\OP\\L4\\Forma.aspx.cs",
               "RelativeDocumentMoniker": "Forma.aspx.cs",
               "ToolTip": "C:\\Users\\adoma\\Desktop\\OP\\L4\\Forma.aspx.cs",
               "RelativeToolTip": "Forma.aspx.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwCQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T13:30:03.337Z",
               "IsPinned": true,
@@ -68,12 +68,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Forma.aspx",
               "DocumentMoniker": "C:\\Users\\adoma\\Desktop\\OP\\L4\\Forma.aspx",
               "RelativeDocumentMoniker": "Forma.aspx",
-              "ToolTip": "C:\\Users\\adoma\\Desktop\\OP\\L4\\Forma.aspx*",
-              "RelativeToolTip": "Forma.aspx*",
+              "ToolTip": "C:\\Users\\adoma\\Desktop\\OP\\L4\\Forma.aspx",
+              "RelativeToolTip": "Forma.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-05-04T12:57:13.468Z",
@@ -95,26 +95,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "FormaMethods.cs",
               "DocumentMoniker": "C:\\Users\\adoma\\Desktop\\OP\\L4\\FormaMethods.cs",
               "RelativeDocumentMoniker": "FormaMethods.cs",
               "ToolTip": "C:\\Users\\adoma\\Desktop\\OP\\L4\\FormaMethods.cs",
               "RelativeToolTip": "FormaMethods.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAqwAwAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwBEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T13:30:57.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "InOutUtils.cs",
               "DocumentMoniker": "C:\\Users\\adoma\\Desktop\\OP\\L4\\InOutUtils.cs",
               "RelativeDocumentMoniker": "InOutUtils.cs",
               "ToolTip": "C:\\Users\\adoma\\Desktop\\OP\\L4\\InOutUtils.cs",
               "RelativeToolTip": "InOutUtils.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCIAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T12:39:17.578Z",
               "EditorCaption": ""
@@ -127,59 +127,59 @@
               "RelativeDocumentMoniker": "TaskUtils.cs",
               "ToolTip": "C:\\Users\\adoma\\Desktop\\OP\\L4\\TaskUtils.cs",
               "RelativeToolTip": "TaskUtils.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvyoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T12:17:44.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "House.cs",
               "DocumentMoniker": "C:\\Users\\adoma\\Desktop\\OP\\L4\\House.cs",
               "RelativeDocumentMoniker": "House.cs",
               "ToolTip": "C:\\Users\\adoma\\Desktop\\OP\\L4\\House.cs",
               "RelativeToolTip": "House.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T11:52:30.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Flat.cs",
               "DocumentMoniker": "C:\\Users\\adoma\\Desktop\\OP\\L4\\Flat.cs",
               "RelativeDocumentMoniker": "Flat.cs",
               "ToolTip": "C:\\Users\\adoma\\Desktop\\OP\\L4\\Flat.cs",
               "RelativeToolTip": "Flat.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAwwB0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T11:42:26.154Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "RealEstate.cs",
               "DocumentMoniker": "C:\\Users\\adoma\\Desktop\\OP\\L4\\RealEstate.cs",
               "RelativeDocumentMoniker": "RealEstate.cs",
               "ToolTip": "C:\\Users\\adoma\\Desktop\\OP\\L4\\RealEstate.cs",
               "RelativeToolTip": "RealEstate.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAAAE0AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAD4AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T11:27:12.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Agency.cs",
               "DocumentMoniker": "C:\\Users\\adoma\\Desktop\\OP\\L4\\Agency.cs",
               "RelativeDocumentMoniker": "Agency.cs",
               "ToolTip": "C:\\Users\\adoma\\Desktop\\OP\\L4\\Agency.cs",
               "RelativeToolTip": "Agency.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAADcAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAqwIkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-04T11:25:56.003Z",
               "EditorCaption": ""

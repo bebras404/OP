@@ -41,7 +41,8 @@ namespace L4
             {
                 return false;
             }
-            return this.Street == other.Street && this.HouseNumber == other.HouseNumber;
+            return this.Street == other.Street && this.HouseNumber == other.HouseNumber 
+                && this.City == other.City && this.District == other.District && this.Area == other.Area;
         }
         
         public override bool Equals(object obj)
@@ -55,24 +56,12 @@ namespace L4
 
         public int CompareTo(RealEstate other) 
         {
-            
-            if (this.City != (other as RealEstate).City)
+            if (this.Street.CompareTo(other.Street) == 0) 
             {
-                return this.City.CompareTo((other as RealEstate).City);
+                return this.HouseNumber.CompareTo(other.HouseNumber);
             }
-            if (this.District != (other as RealEstate).District)
-            {
-                return this.District.CompareTo((other as RealEstate).District);
-            }
-            if (this.Street != (other as RealEstate).Street)
-            {
-                return this.Street.CompareTo((other as RealEstate).Street);
-            }
-            if (this.HouseNumber != (other as RealEstate).HouseNumber)
-            {
-                return this.HouseNumber.CompareTo((other as RealEstate).HouseNumber);
-            }
-            return 0;
+            return this.Street.CompareTo(other.Street);
+
         }
 
         public abstract bool IsLarge();

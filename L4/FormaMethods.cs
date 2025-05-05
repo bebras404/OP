@@ -9,18 +9,24 @@ namespace L4
 {
 	public partial class Forma : System.Web.UI.Page
     { 
-        public void LoadDataToTable(Agency agency, HtmlForm form) 
+        public void LoadDataToTable(Agency agency, HtmlForm form,string header) 
         {
             Table table = new Table();
-            TableRow hRow0 = new TableRow();
-            hRow0.Cells.Add(new TableCell() { Text = $"Pavadinimas: {agency.Name}", ColumnSpan=10 });
-            TableRow hRow1 = new TableRow();
-            hRow1.Cells.Add(new TableCell() { Text = $"Adresas: {agency.Adress}", ColumnSpan = 10 });
-            TableRow hRow2 = new TableRow();
-            hRow2.Cells.Add(new TableCell() { Text = $"Telefono numeris: {agency.PhoneNumber}", ColumnSpan = 10 });
-            table.Rows.Add(hRow0);
-            table.Rows.Add(hRow1);
-            table.Rows.Add(hRow2);
+            TableRow headerRow = new TableRow();
+            headerRow.Cells.Add(new TableCell() { Text = string.Format(header), ColumnSpan = 10 });
+            table.Rows.Add(headerRow);
+            if (agency.Name == string.Empty && agency.Adress == string.Empty) 
+            {
+                TableRow hRow0 = new TableRow();
+                hRow0.Cells.Add(new TableCell() { Text = $"Pavadinimas: {agency.Name}", ColumnSpan = 10 });
+                TableRow hRow1 = new TableRow();
+                hRow1.Cells.Add(new TableCell() { Text = $"Adresas: {agency.Adress}", ColumnSpan = 10 });
+                TableRow hRow2 = new TableRow();
+                hRow2.Cells.Add(new TableCell() { Text = $"Telefono numeris: {agency.PhoneNumber}", ColumnSpan = 10 });
+                table.Rows.Add(hRow0);
+                table.Rows.Add(hRow1);
+                table.Rows.Add(hRow2);
+            }  
             AddHeader(new string[] {
                 "Miestas", "Rajonas", "Gatvė", "Namo numeris", "Tipas",
                 "Pastatymo data", "Plotas", "Kambarių skaičius", "Aukštas", "Šildymo tipas" }, table);
@@ -51,12 +57,21 @@ namespace L4
 
         }
 
-        public void LoadMostCommonStreet(Dictionary<string, int> MostCommonStreetEstates) 
+        public void LoadMostCommonStreet(Dictionary<string, int> MostCommonStreetEstates, HtmlForm form) 
         {
             Table table = new Table();
             TableRow hRow0 = new TableRow();
             hRow0.Cells.Add(new TableCell() { Text = "Dažniausiai pasikartojantčios gatvės", ColumnSpan = 10 });
-            for
+            table.Rows.Add(hRow0);
+            AddHeader(new string[] { "Gatvės pavadinimas", "Kiekis" }, table);
+            foreach (var pair in MostCommonStreetEstates) 
+            {
+                TableRow row = new TableRow();
+                row.Cells.Add(new TableCell() { Text = pair.Key });
+                row.Cells.Add(new TableCell() { Text = pair.Value.ToString() });
+                table.Rows.Add(row);
+            }
+            form.Controls.Add(table);
         }
 
 
