@@ -1,9 +1,9 @@
 UAB "Rabarbaras"
 Jonavos g. 169, Kaunas
 528588585
-Kaunas;Šilainiai
-Kaunas;Centras;Laisvės al.;10;Butas;1998;72.5;3;2
+Kaunas;Centras;Laisvės al.;10;Butas;1998;8000;3;2
 Vilnius;Naujamiestis;Vytenio g.;22;Kotedžas;2015;180;6;Dujinis
 Kaunas;Šilainiai;Aauja g.;30;Kotedžas;2005;165;5;Anglys
-Kaunas;Dainava;Partizanų g.;56;Butas;2008;49;2;4
+Kaunas;Dainava;Partizanų g.;56;Butas;2008;3000;2;4
 Kaunas;Žaliakalnis;Ąžuolų g.;7;Kotedžas;2012;140;4;Dujinis
+adsasssss

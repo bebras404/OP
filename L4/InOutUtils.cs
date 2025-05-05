@@ -67,7 +67,7 @@ namespace L4
                     catch (Exception)
                     {
                         HttpContext.Current.Response.Write(
-                         $"<script>alert('[{fileName}, line {lineNumber}: {line.Replace("'", "\\'")}');</script>");
+                         $"<script>alert('Klaida: [{fileName}, line {lineNumber}: {line.Replace("'", "\\'")}');</script>");
                         continue;
                     }
                 }

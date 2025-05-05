@@ -60,7 +60,7 @@ namespace L4
         }
 
         /// <summary>
-        /// Compares this Flat with another Flat.
+        /// Compares this Flat with another Flat
         /// </summary>
         /// <param name="flat">The Flat to compare with.</param>
         /// <returns>
@@ -87,14 +87,14 @@ namespace L4
         /// <summary>
         /// Checks if the flat is large.
         /// </summary>
-        /// <returns>True if the flat is large, otherwise false.</returns>
+        /// <returns>True if the flat is large otherwise false</returns>
         public override bool IsLarge()
         {
             return this.Area > 90;
         }
 
         /// <summary>
-        /// Gets a text description of the Flat.
+        /// Gets a text description of the Flat
         /// </summary>
         /// <returns>A text description of the Flat.</returns>
         public override string ToString()
