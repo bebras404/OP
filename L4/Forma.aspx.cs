@@ -12,22 +12,20 @@ namespace L4
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-
-		}
-
+        }
+ 
         protected void Upload_Click(object sender, EventArgs e)
         {
-            string folderPath = Server.MapPath("~/Files"); 
-            DirectoryInfo dir = new DirectoryInfo(folderPath);
-            foreach (FileInfo file in dir.GetFiles("*.txt"))
+            int count = 0;
+            string[] filePaths = Directory.GetFiles(Server.MapPath("~/AgencyData"), "*.txt");
+            foreach (string path in filePaths)
             {
-                string filePath = file.FullName;
-                Agency agency = InOutUtils.ReadAgency(filePath);
-                Session["Agency"]
+                Agency[] agency = new Agency[filePaths.Count()];
+                Agency data = InOutUtils.ReadAgency(path);
+                LoadDataToTable(data, form1);
+                agency[count] = data;
+                count++;
             }
-
-
-
         }
     }
 }

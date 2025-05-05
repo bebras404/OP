@@ -9,29 +9,30 @@ namespace L4
     {
         public string HeatingType { get; set; }
 
-        public House(string city, string district, string street, int houseNumber, string type, DateTime buildDate, double area, int numberOfRooms, string HeatingType) :
+        public House(string city, string district, string street, int houseNumber, string type, int buildDate, double area, int numberOfRooms, string HeatingType) :
             base(city, district, street, houseNumber, type, buildDate, area, numberOfRooms)
         {
-
-            this.City = city;
-            this.District = district;
-            this.Street = street;
-            this.HouseNumber = houseNumber;
-            this.Type = type;
-            this.BuildDate = buildDate;
-            this.Area = area;
-            this.NumberOfRooms = numberOfRooms;
             this.HeatingType = HeatingType;
         }
 
-        public override bool Equals(RealEstate other)
+        public override bool Equals(object other)
         {
-            throw new NotImplementedException();
+            return this.Equals(other as House);
         }
 
-        public override int CompareTo(RealEstate other)
+        public bool Equals(House house)
         {
-            throw new NotImplementedException();
+            return base.Equals(house);
+        }
+
+        public int CompareTo(House house)
+        {
+            return base.CompareTo(house);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         public override bool IsLarge()

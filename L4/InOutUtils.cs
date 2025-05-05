@@ -28,7 +28,7 @@ namespace L4
                     string street = values[2];
                     int houseNumber = int.Parse(values[3]);
                     string type = values[4];
-                    DateTime buildDate = DateTime.Parse(values[5]);
+                    int buildDate = int.Parse(values[5]);
                     double area = double.Parse(values[6]);
                     int numberOfRooms = int.Parse(values[7]);
                     var diff = values[8];

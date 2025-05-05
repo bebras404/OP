@@ -9,29 +9,30 @@ namespace L4
 	{
 		public int Floor { get; set; }
 
-		public Flat(string city, string district, string street, int houseNumber, string type, DateTime buildDate, double area, int numberOfRooms, int Floor) :
+		public Flat(string city, string district, string street, int houseNumber, string type, int buildDate, double area, int numberOfRooms, int Floor) :
 			base(city, district, street, houseNumber, type, buildDate, area, numberOfRooms) 
 		{
-
-			this.City = city;
-            this.District = district;
-            this.Street = street;
-            this.HouseNumber = houseNumber;
-            this.Type = type;
-            this.BuildDate = buildDate;
-            this.Area = area;
-            this.NumberOfRooms = numberOfRooms;
             this.Floor = Floor;
         }
 
-        public override bool Equals(RealEstate other)
+        public override bool Equals(object other)
         {
-            throw new NotImplementedException();
+            return this.Equals(other as Flat);
         }
 
-        public override int CompareTo(RealEstate other)
+        public bool Equals(Flat flat) 
         {
-            throw new NotImplementedException();
+            return base.Equals(flat);
+        }
+
+        public int CompareTo(Flat flat) 
+        {
+            return base.CompareTo(flat);
+        } 
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         public override bool IsLarge()

@@ -7,25 +7,48 @@ namespace L4
 {
 	public static class TaskUtils
 	{
-        public static Dictionary<string, int> FindStreetCounts(Agency agency, ref Dictionary<string, int> streetCounts) 
+        public static string FindMaxStreet(Agency[] agencies)
         {
-            foreach (RealEstate estate in agency)
+            int maxCount = 0;
+            string mostCommonStreet = "";
+
+            foreach (Agency agency in agencies)
             {
-                if (streetCounts.ContainsKey(estate.Street))
+                foreach (RealEstate estate in agency)
                 {
-                    streetCounts[estate.Street]++;
-                }
-                else
-                {
-                    streetCounts[estate.Street] = 1;
+                    string street = estate.Street;
+                    int count = agency.CountStreets(street);
+
+                    if (count > maxCount)
+                    {
+                        maxCount = count;
+                        mostCommonStreet = street;
+                    }
                 }
             }
-            return streetCounts;
+            return mostCommonStreet;
+        }
+
+        public static List<RealEstate> PickOutObjectsByStreets(string street, Agency[] agencies) 
+        {
+            List<RealEstate> result = new List<RealEstate>();
+            foreach (Agency agency in agencies) 
+            {
+                foreach (RealEstate estate in agency) 
+                {
+                    if (estate.Street == street)
+                    {
+                        result.Add(estate);
+                    }
+                }
+            }
+            return result;
         }
 
 
 
 
 
-	}
+
+    }
 }
