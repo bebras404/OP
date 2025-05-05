@@ -7,8 +7,6 @@
 }
 
 form {
-    max-width: 800px;
-    margin: auto;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -22,13 +20,18 @@ h1 {
     margin-bottom: 30px;
 }
 
-label {
-    display: block;
-    margin: 15px 0 5px;
-    font-weight: bold;
+form {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     text-align: center;
+    box-sizing: border-box;
+    overflow-x: auto;
 }
-
 table {
     width: 100%;
     border-collapse: collapse;

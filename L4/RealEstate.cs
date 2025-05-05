@@ -63,6 +63,10 @@ namespace L4
             return this.Street.CompareTo(other.Street);
 
         }
+        public override string ToString()
+        {
+            return $"{this.City},{this.District},{this.Street},{this.HouseNumber},{this.Type},{this.BuildDate},{this.Area},{this.NumberOfRooms}";
+        }
 
         public abstract bool IsLarge();
     }

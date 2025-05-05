@@ -1,18 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Web;
-using System.Web.DynamicData;
+﻿using System.Collections.Generic;
 
 namespace L4
 {
-	public static class TaskUtils
-	{
-        public static Agency FuseAgencies(Agency[] agencies) 
+    public static class TaskUtils
+    {
+        public static Agency LargeObjs(Agency[] agencies)
+        {
+            Agency bigOnes = new Agency();
+            foreach (Agency agency in agencies)
+            {
+                foreach (RealEstate estate in agency)
+                {
+                    if (estate.IsLarge())
+                    {
+                        bigOnes.Add(estate);
+                    }
+                }
+            }
+            return bigOnes;
+        }
+
+        public static Agency FuseAgencies(Agency[] agencies)
         {
             Agency Fused = new Agency();
-            foreach (Agency agency in agencies) 
+            foreach (Agency agency in agencies)
             {
                 Fused += agency;
             }
@@ -21,34 +32,40 @@ namespace L4
         }
 
 
-        public static Agency FindInMultipleAgencies(Agency fused, int amountOfAgencies) 
+        public static Agency FindInMultipleAgencies(Agency fused)
         {
-            for(int i = 0; i < fused.Count(); i++)
+            Agency result = new Agency();
+
+            for (int i = 0; i < fused.Count(); i++)
             {
+                RealEstate current = fused.Get(i);
                 int count = 0;
-                for (int j = 0; j < fused.Count(); j++) 
+
+                for (int j = 0; j < fused.Count(); j++)
                 {
-                    if (fused.Get(i).Equals(fused.Get(j)))
+                    if (current.Equals(fused.Get(j)))
                     {
                         count++;
+                        if (count > 1) break;
                     }
                 }
-                if (count < amountOfAgencies)
+
+                if (count > 1 && !result.Contains(current))
                 {
-                    fused.Remove(fused.Get(i));
+                    result.Add(current);
                 }
-               
             }
-            fused.RemoveDublicates();
-            return fused;
+
+            return result;
         }
 
-        public static Agency PickOutOldest(Agency[] agencies, int oldestValue) 
+
+        public static Agency PickOutOldest(Agency[] agencies, int oldestValue)
         {
             Agency oldestRealEstates = new Agency();
-            foreach (Agency a in agencies) 
+            foreach (Agency a in agencies)
             {
-                foreach (RealEstate estate in a) 
+                foreach (RealEstate estate in a)
                 {
                     if (estate.BuildDate == oldestValue)
                     {
@@ -59,12 +76,12 @@ namespace L4
             return oldestRealEstates;
         }
 
-        public static int MinAgeForAll(Agency[] agencies) 
+        public static int MinAgeForAll(Agency[] agencies)
         {
             int minAge = 9999;
             foreach (Agency agency in agencies)
             {
-                if (minAge > agency.FindMinAge()) 
+                if (minAge > agency.FindMinAge())
                 {
                     minAge = agency.FindMinAge();
                 }
@@ -72,50 +89,54 @@ namespace L4
             return minAge;
         }
 
-        public static string FindMaxStreet(Agency[] agencies)
+        public static int FindMaxStreetCount(Dictionary<string, int> streetCounts)
         {
-            int maxCount = 0;
-            string mostCommonStreet = "";
+            int max = 0;
+            foreach (var pair in streetCounts)
+            {
+                if (pair.Value > max)
+                {
+                    max = pair.Value;
+                }
+            }
+            return max;
+        }
 
+
+        public static Dictionary<string, int> PutToDicti(Agency[] agencies)
+        {
+            Dictionary<string, int> result = new Dictionary<string, int>();
             foreach (Agency agency in agencies)
             {
                 foreach (RealEstate estate in agency)
                 {
-                    string street = estate.Street;
-                    int count = agency.CountStreets(street);
-
-                    if (count > maxCount)
+                    if (result.ContainsKey(estate.Street))
                     {
-                        maxCount = count;
-                        mostCommonStreet = street;
+                        result[estate.Street]++;
                     }
-                }
-            }
-            return mostCommonStreet;
-        }
-
-        public static Dictionary<string, int> PickOutObjectsByStreets(string street, Agency[] agencies) 
-        {
-            Dictionary<string, int> result = new Dictionary<string, int>();
-            foreach (Agency agency in agencies) 
-            {
-                foreach (RealEstate estate in agency) 
-                {
-                    if (estate.Street == street)
+                    else
                     {
-                        if (result.ContainsKey(estate.Street)) 
-                        {
-                            result[estate.Street]++;
-                        }
-                        else
-                        {
-                            result.Add(estate.Street, 1);
-                        }
+                        result.Add(estate.Street, 1);
                     }
+
                 }
             }
             return result;
         }
+
+        public static Dictionary<string, int> PickOutCommonStreets(Dictionary<string, int> values, int MaxValue)
+        {
+            Dictionary<string, int> result = new Dictionary<string, int>();
+            foreach (var pair in values)
+            {
+                if (pair.Value == MaxValue)
+                {
+                    result.Add(pair.Key, pair.Value);
+                }
+            }
+            return result;
+        }
+
 
 
 

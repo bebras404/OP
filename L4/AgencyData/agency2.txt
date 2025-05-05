@@ -1,0 +1,9 @@
+UAB "Granatmedis"
+Lazdynų g. 77, Vilnius
+844412345
+Vilnius;Antakalnis;Žolyno g.;3;Butas;2010;90;3;5
+Vilnius;Antakalnis;Smiltelės g.;5;Butas;2009;91;4;4
+Vilnius;Šilainiai;Aauja g.;30;Kotedžas;2005;201;5;Malkos
+Klaipėda;Smeltė;Gintaro g.;5;Kotedžas;2018;200;6;Geoterminis
+Vilnius;Senamiestis;Didžioji g.;1;Butas;1990;65;2;3
+Vilnius;Naujamiestis;Vytenio g.;22;Kotedžas;2015;205;6;Dujinis

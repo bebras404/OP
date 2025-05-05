@@ -9,48 +9,53 @@ using System.Xml;
 
 namespace L4
 {
-	public class Agency : IEnumerable<RealEstate>
-    {        	
-		public string Name { get; private set; }
-		public string Adress { get; private set; }
-		public int PhoneNumber { get; private set; }
+    public class Agency : IEnumerable<RealEstate>
+    {
+        public string Name { get; private set; }
+        public string Adress { get; private set; }
+        public int PhoneNumber { get; private set; }
 
-		private List<RealEstate> realEstates;
+        private List<RealEstate> realEstates;
 
-		public Agency(string name, string adress, int phoneNumber) 
-		{
-			this.Name = name;
-			this.Adress = adress;
+        public Agency(string name, string adress, int phoneNumber)
+        {
+            this.Name = name;
+            this.Adress = adress;
             this.PhoneNumber = phoneNumber;
             this.realEstates = new List<RealEstate>();
         }
 
-        public Agency() 
+        public Agency()
         {
             this.realEstates = new List<RealEstate>();
         }
 
-        public void Add(RealEstate re) 
-		{
-            realEstates.Add(re);		
+        public void Add(RealEstate re)
+        {
+            realEstates.Add(re);
         }
 
-		public void Remove(RealEstate re) 
-		{
-			realEstates.Remove(re);
-		}
+        public void Remove(RealEstate re)
+        {
+            realEstates.Remove(re);
+        }
 
         public RealEstate Get(int index)
         {
+
+
             return realEstates[index];
+
+
+
         }
 
-        public int Count() 
-		{
+        public int Count()
+        {
             return realEstates.Count;
         }
 
-        public void RemoveDublicates() 
+        public void RemoveDublicates()
         {
             for (int i = 0; i < realEstates.Count; i++)
             {
@@ -65,9 +70,9 @@ namespace L4
 
         }
 
-        public bool Contains(RealEstate estate) 
+        public bool Contains(RealEstate estate)
         {
-            foreach (RealEstate curr in realEstates) 
+            foreach (RealEstate curr in realEstates)
             {
                 if (curr.Equals(estate))
                 {
@@ -77,7 +82,7 @@ namespace L4
             return false;
         }
 
-        public int CountStreets(string street) 
+        public int CountStreets(string street)
         {
             int count = 0;
             foreach (var realEstate in realEstates)
@@ -90,12 +95,12 @@ namespace L4
             return count;
         }
 
-        public int FindMinAge() 
+        public int FindMinAge()
         {
             int minAge = 9999;
-            foreach(RealEstate estate in realEstates)
+            foreach (RealEstate estate in realEstates)
             {
-                if (estate.BuildDate < minAge) 
+                if (estate.BuildDate < minAge)
                 {
                     minAge = estate.BuildDate;
                 }

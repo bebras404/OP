@@ -2,20 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace L4
 {
-	public partial class Forma : System.Web.UI.Page
-    { 
-        public void LoadDataToTable(Agency agency, HtmlForm form,string header) 
+    public partial class Forma : System.Web.UI.Page
+    {
+        public void LoadDataToTable(Agency agency, HtmlForm form, string header)
         {
+             
             Table table = new Table();
             TableRow headerRow = new TableRow();
             headerRow.Cells.Add(new TableCell() { Text = string.Format(header), ColumnSpan = 10 });
             table.Rows.Add(headerRow);
-            if (agency.Name == string.Empty && agency.Adress == string.Empty) 
+            if (agency.Name != string.Empty && agency.Adress != string.Empty && agency.PhoneNumber != 0)
             {
                 TableRow hRow0 = new TableRow();
                 hRow0.Cells.Add(new TableCell() { Text = $"Pavadinimas: {agency.Name}", ColumnSpan = 10 });
@@ -26,7 +28,7 @@ namespace L4
                 table.Rows.Add(hRow0);
                 table.Rows.Add(hRow1);
                 table.Rows.Add(hRow2);
-            }  
+            }
             AddHeader(new string[] {
                 "Miestas", "Rajonas", "Gatvė", "Namo numeris", "Tipas",
                 "Pastatymo data", "Plotas", "Kambarių skaičius", "Aukštas", "Šildymo tipas" }, table);
@@ -57,14 +59,15 @@ namespace L4
 
         }
 
-        public void LoadMostCommonStreet(Dictionary<string, int> MostCommonStreetEstates, HtmlForm form) 
+        public void LoadMostCommonStreet(Dictionary<string, int> MostCommonStreetEstates, HtmlForm form)
         {
+
             Table table = new Table();
             TableRow hRow0 = new TableRow();
-            hRow0.Cells.Add(new TableCell() { Text = "Dažniausiai pasikartojantčios gatvės", ColumnSpan = 10 });
+            hRow0.Cells.Add(new TableCell() { Text = "Dažniausiai pasikartojančios gatvės", ColumnSpan = 10 });
             table.Rows.Add(hRow0);
             AddHeader(new string[] { "Gatvės pavadinimas", "Kiekis" }, table);
-            foreach (var pair in MostCommonStreetEstates) 
+            foreach (var pair in MostCommonStreetEstates)
             {
                 TableRow row = new TableRow();
                 row.Cells.Add(new TableCell() { Text = pair.Key });
@@ -72,11 +75,14 @@ namespace L4
                 table.Rows.Add(row);
             }
             form.Controls.Add(table);
+
+
         }
 
 
         public void AddHeader(string[] headers, Table table)
         {
+
             TableRow headerRow = new TableRow();
             foreach (string header in headers)
             {
@@ -85,6 +91,12 @@ namespace L4
                 headerRow.Cells.Add(cell);
             }
             table.Rows.Add(headerRow);
+        }
+
+        public static void MessageBox(System.Web.UI.Page page, string strMsg)
+        {
+            ScriptManager.RegisterClientScriptBlock(page, page.GetType(), "alertMessage", "alert('" + strMsg + "')", true);
+
         }
 
     }

@@ -1,5 +1,0 @@
-UAB "Rabarbaras"
-Jonavos g. 169, Kaunas
-828252858
-Kaunas;Šilainiai;Aauja g.;25;Kotedžas;2005;165;5;Anglys
-Vilnius;Šilainiai;Aauja g.;30;Kotedžas;2005;165;5;5
