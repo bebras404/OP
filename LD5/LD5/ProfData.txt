@@ -1,3 +1,5 @@
 Matematika;Matulionis;Dainius;5
 Programavimas;Petrauskienė;Rasa;6
+GGPDF;';;;;
 Duomenų bazės;Matulionis;Dainius;4
+Labs;d;d;wd;s

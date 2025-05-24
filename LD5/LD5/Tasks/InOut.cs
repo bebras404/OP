@@ -20,13 +20,20 @@ namespace LD5
                 students = new StudList(line);
 				while ((line = reader.ReadLine()) != null) 
 				{
-					try
+                    
+                    try
 					{
-						string[] parts = line.Split(';');
-						Student student = new Student(parts[0], parts[1], parts[2], parts[3]);
+                        string[] parts = line.Split(';');
+                        string className = parts[0];
+                        string name = parts[1];
+                        string surname = parts[2];
+                        string group = parts[3];
+
+                     
+                        Student student = new Student(className, surname, name, group);
                         students.AddClass(student);
                     }
-					catch 
+					catch
 					{
                         HttpContext.Current.Response.Write(
 							String.Format($"<script>alert('Klaida failo" +
@@ -52,10 +59,14 @@ namespace LD5
                     try
                     {
                         string[] parts = line.Split(';');
-                        Professor professor = new Professor(parts[0], parts[1], parts[2], int.Parse(parts[3]));
+                        string className = parts[0];
+                        string name = parts[1];
+                        string surname = parts[2];
+                        int credits = int.Parse(parts[3]);
+                        Professor professor = new Professor(className, surname, name, credits);
                         profs.Add(professor);
                     }
-                    catch
+                    catch 
                     {
                         HttpContext.Current.Response.Write(
                             String.Format($"<script>alert('Klaida failo" +

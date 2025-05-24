@@ -1,7 +1,7 @@
 Informatikos fakultetas
-Matematika;Petrauskas;Jonas;IF-22
-Matematika;Jonaitis;Mantas;IF-22
-Programavimas;Kazlauskas;Tomas;IF-21
-Programavimas;Petrauskas;Jonas;IF-22
-Programavimas;Vaitkus;Paulius;IF-21
-Duomenų bazės;Jankauskas;Marius;IF-22
+Matematika;Petrauskas;Jonas;IFD-227
+Matematika;Jonaitis;Mantas;IFD-226
+Programavimas;Kazlauskas;Tomas;IF-2152
+Programavimas;Petrauskas;Jonas;IFD-2240
+Programavimas;Vaitkus;Paulius;IFH-219
+Duomenų bazės;Jankauskas;Marius;IFH-269
