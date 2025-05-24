@@ -73,6 +73,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lists\ProfClassesList.cs" />
     <Compile Include="Lists\StudList.cs" />
     <Compile Include="Forma.aspx.cs">
       <DependentUpon>Forma.aspx</DependentUpon>
@@ -84,7 +85,6 @@
     <Compile Include="FormaMethods.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Lists\StudByProfList.cs" />
     <Compile Include="Tasks\InOut.cs" />
     <Compile Include="ObjClasses\Professor.cs" />
     <Compile Include="ObjClasses\ProfWorkLoad.cs" />

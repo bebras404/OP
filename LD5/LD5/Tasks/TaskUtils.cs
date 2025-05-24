@@ -9,8 +9,8 @@ using System.Web.UI.WebControls;
 
 namespace LD5
 {
-	public static class TaskUtils
-	{
+    public static class TaskUtils
+    {
         public static List<ProfWorkLoad> CalculateLoad(List<Professor> profClasses, List<StudList> choises)
         {
             return profClasses
@@ -27,24 +27,24 @@ namespace LD5
                 .ToList();
         }
 
-        public static List<StudByProfList> TakeClassesByName(List<Professor> profs, List<StudList> studentsLists)
+        public static List<ProfClassesList> TakeClassesByName(List<Professor> profs, List<StudList> studentsLists)
         {
-            return profs.Select(prof =>
-                new StudByProfList(
-                    prof.FirstName,
-                    prof.LastName,
-                    prof.ClassName,
-                    studentsLists.SelectMany(sl => sl.GetStudentsByClass(prof.ClassName)).ToList()
-                )
-            );
+            List<ProfClassesList> tempList = profs
+            .Select(prof => new ProfClassesList(
+            prof.ClassName,
+            studentsLists.SelectMany(s => s.GetStudentsByClass(prof.ClassName)).OrderBy(s => s.Group).ThenBy(s => s.LastName).ToList(),
+            prof.FirstName,
+            prof.LastName)).ToList();
+
+            return tempList;
 
         }
 
         public static List<Professor> FilterProfessorsByName(string Name_LastName, List<Professor> profesors)
         {
-          return profesors
-                .Where(p => (p.FirstName + " " + p.LastName).Equals(Name_LastName, StringComparison.OrdinalIgnoreCase))
-                .ToList();
+            return profesors
+                  .Where(p => (p.FirstName + " " + p.LastName).Equals(Name_LastName, StringComparison.OrdinalIgnoreCase))
+                  .ToList();
         }
 
 

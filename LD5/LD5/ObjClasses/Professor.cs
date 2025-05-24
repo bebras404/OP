@@ -21,9 +21,8 @@ namespace LD5
             this.CreditCount = creditCount;
         }
 
-        public Professor(string lastName, string firstName, string classname)
+        public Professor(string lastName, string firstName)
         {
-            this.ClassName = classname;
             this.LastName = lastName;
             this.FirstName = firstName;
         }

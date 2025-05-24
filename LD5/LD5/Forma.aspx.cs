@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LD5.Lists;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -29,7 +30,20 @@ namespace LD5
         {
             string folderPath = Server.MapPath("~/AppData/");
             string[] filePaths = Directory.GetFiles(folderPath, "*.txt");
-            List<StudList> studentsChoises = filePaths.Select(path => InOut.ReadStudents(path)).ToList();
+            List<StudList> studentsChoises = new List<StudList>();
+            if (filePaths.Length == 0)
+            {
+                HttpContext.Current.Response.Write("<script>alert('Nerasta jokių failų AppData aplanke.')</script>");
+                return;
+            }
+            try
+            {
+               studentsChoises = filePaths.Select(path => InOut.ReadStudents(path)).ToList();
+            }
+            catch 
+            {
+                HttpContext.Current.Response.Write("<script>alert('Klaida skaitant studentų duomenis. Patikrinkite failus AppData aplanke.')</script>");
+            }
             List<Professor> professors = InOut.ReadProfessors(Server.MapPath("~/ProfData.txt"));
             studentsChoises.ForEach(students =>
             {
@@ -50,7 +64,13 @@ namespace LD5
         protected void Button2_Click(object sender, EventArgs e)
         {
             string Name_LastName = TextBox1.Text;
+            List<Professor> filteredProfessors = TaskUtils.FilterProfessorsByName(Name_LastName, (List<Professor>)Session["professors"]);
+            List<ProfClassesList> filteredByClass = TaskUtils.TakeClassesByName(filteredProfessors, (List<StudList>)Session["students"]);
+            filteredByClass.ForEach(ProfClass => { LoadDataToTableStudentAfterFilter(ProfClass, "Modulio "
+                + ProfClass.GetClassName().ToLower() + " studentai, kuriems dėsto " + ProfClass.GetProffessorName() + " : ", PH4); });
             
+
+
         }
     }
 }

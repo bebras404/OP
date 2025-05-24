@@ -1,5 +1,5 @@
 Informatikos fakultetas
-Matematika;Petrauskas;Jonas;IF-22
+Matematika;Petrauskas; ;Jonas;IF-22
 Matematika;Jonaitis;Mantas;IF-22
 Programavimas;Kazlauskas;Tomas;IF-21
 Programavimas;Petrauskas;Jonas;IF-22
