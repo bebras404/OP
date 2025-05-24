@@ -6,19 +6,26 @@ using System.Web.UI.WebControls;
 
 namespace LD5
 {
-	public class ProfClasses
+	public class Professor
 	{
 		public string ClassName { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }
         public int CreditCount { get; set; }
 
-        public ProfClasses(string classname, string lastName, string firstName, int creditCount) 
+        public Professor(string classname, string lastName, string firstName, int creditCount) 
         {
             this.ClassName = classname;
             this.LastName = lastName;
             this.FirstName = firstName;
             this.CreditCount = creditCount;
+        }
+
+        public Professor(string lastName, string firstName, string classname)
+        {
+            this.ClassName = classname;
+            this.LastName = lastName;
+            this.FirstName = firstName;
         }
 
         public TableRow ToRow() 

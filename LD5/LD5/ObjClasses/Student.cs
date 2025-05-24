@@ -6,18 +6,25 @@ using System.Web.UI.WebControls;
 
 namespace LD5
 {
-	public class StudentClasses
+	public class Student
 	{
         public string ClassName { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }
 		public string Group { get; set; }
 
-		public StudentClasses(string classname, string lastName, string firstName, string group) 
+		public Student(string classname, string lastName, string firstName, string group) 
 		{
 			this.ClassName = classname;
             this.LastName = lastName;
             this.FirstName = firstName;
+            this.Group = group;
+        }
+
+        public Student(string lastName, string Name, string group) 
+        {
+            this.LastName = lastName ;
+            this.FirstName = Name;
             this.Group = group;
         }
 

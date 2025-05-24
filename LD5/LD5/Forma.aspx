@@ -8,11 +8,24 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" visible="True">
         <div>
             Moduliai<br />
             <br />
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Įkelti duomenis" />
+            <br />
+            <br />
+            <asp:PlaceHolder ID="PH4" runat="server"></asp:PlaceHolder>
+            <br />
+            <br />
+            <asp:Label ID="Label1" runat="server" Text="Įveskite dėstytojo vardą ir pavardę:" Visible="False"></asp:Label>
+&nbsp;<asp:TextBox ID="TextBox1" runat="server" Visible="False" Width="190px"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Atrinkti" Visible="False" />
+            <br />
+            <br />
+            <asp:PlaceHolder ID="PH3" runat="server"></asp:PlaceHolder>
             <br />
             <br />
             <asp:PlaceHolder ID="PH2" runat="server"></asp:PlaceHolder>

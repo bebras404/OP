@@ -12,25 +12,45 @@ namespace LD5
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
+            if (!IsPostBack)
+            {
+                Button2.Visible = false;
+                Label1.Visible = false;
+                TextBox1.Visible = false;
+            }
+            else 
+            {
+                LoadSessionData();
+            }
 
-		}
+        }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
             string folderPath = Server.MapPath("~/AppData/");
             string[] filePaths = Directory.GetFiles(folderPath, "*.txt");
-            List<ClassList<StudentClasses>> studentsChoises = filePaths.Select(path => InOut.ReadStudents(path)).ToList();
-            ClassList<ProfClasses> professors = InOut.ReadProfessors(Server.MapPath("~/ProfData.txt"));
+            List<StudList> studentsChoises = filePaths.Select(path => InOut.ReadStudents(path)).ToList();
+            List<Professor> professors = InOut.ReadProfessors(Server.MapPath("~/ProfData.txt"));
             studentsChoises.ForEach(students =>
             {
-                LoadDataToTable(students, $"Fakultetas: {students.GetFaculty()}", PH1);
+                LoadDataToTableStudent(students, $"Fakultetas: {students.GetFaculty()}", PH1);
             });
-            LoadDataToTable(professors, "Profesoriai", PH2);
+            LoadDataToTableProfessor(professors, "Profesoriai", PH2);
+            Session["students"] = studentsChoises;
+            Session["professors"] = professors;
+            List<ProfWorkLoad> LoadCalc = TaskUtils.CalculateLoad(professors, studentsChoises);
+            LoadDataToTableLoad(LoadCalc, "Dėstytojų darbo apkrovos", PH3);
+            Session["Load"] = LoadCalc;
 
+            Button2.Visible = true;
+            Label1.Visible = true;
+            TextBox1.Visible = true;
+        }
 
-
-
-
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            string Name_LastName = TextBox1.Text;
+            
         }
     }
 }

@@ -9,21 +9,21 @@ namespace LD5
 {
 	public static class InOut
 	{
-		public static ClassList<StudentClasses>ReadStudents(string fileName)
+		public static StudList ReadStudents(string fileName)
 		{
-			ClassList<StudentClasses> students = null;
+			StudList students = null;
 			using (StreamReader reader = new StreamReader(fileName, Encoding.UTF8)) 
 			{
 				string line;
 				int lineCounter = 1;
                 line = reader.ReadLine();
-                students = new ClassList<StudentClasses>(line);
+                students = new StudList(line);
 				while ((line = reader.ReadLine()) != null) 
 				{
 					try
 					{
 						string[] parts = line.Split(';');
-						StudentClasses student = new StudentClasses(parts[0], parts[1], parts[2], parts[3]);
+						Student student = new Student(parts[0], parts[1], parts[2], parts[3]);
                         students.AddClass(student);
                     }
 					catch 
@@ -39,21 +39,21 @@ namespace LD5
             return students;
         }
 
-		public static ClassList<ProfClasses> ReadProfessors(string fileName) 
+		public static List<Professor> ReadProfessors(string fileName) 
 		{
-			ClassList<ProfClasses> profs = null;
+			List<Professor> profs = null;
             using (StreamReader reader = new StreamReader(fileName, Encoding.UTF8))
             {
                 string line;
                 int lineCounter = 1;
-                profs = new ClassList<ProfClasses>();
+                profs = new List<Professor>();
                 while ((line = reader.ReadLine()) != null)
                 {
                     try
                     {
                         string[] parts = line.Split(';');
-                        ProfClasses professor = new ProfClasses(parts[0], parts[1], parts[2], int.Parse(parts[3]));
-                        profs.AddClass(professor);
+                        Professor professor = new Professor(parts[0], parts[1], parts[2], int.Parse(parts[3]));
+                        profs.Add(professor);
                     }
                     catch
                     {
