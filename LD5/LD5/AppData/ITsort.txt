@@ -1,0 +1,11 @@
+Informatikos fakultetas
+Programavimas;Balčiūnas;Tomas;IF-21
+Programavimas;Adamkevičius;Lukas;IF-22
+Programavimas;Žukauskas;Marius;IF-22
+Programavimas;Petraitis;Jonas;IF-21
+Programavimas;Kazlauskas;Andrius;IF-21
+Programavimas;Dulkytė;Eglė;IF-23
+Programavimas;Bartkevičius;Simonas;IF-23
+Programavimas;Jakubauskaitė;Laura;IF-22
+Programavimas;Jurgelevičius;Dainius;IF-21
+Programavimas;Vasiliauskaitė;Rasa;IF-23

@@ -6,6 +6,7 @@ Marketingas;Navickienė;Jolanta;5
 ;;sd;;ds;'''as;;
 
 Verslo teisė;Butkus;Valdas;4
+Programavimas;Naujokaitis;Lukas;6
 Statybos pagrindai;Daugirdas;Justas;6
 Konstrukcijų analizė;Vitkutė;Monika;5
 Statybos teisė;Starkus;Andrius;3
