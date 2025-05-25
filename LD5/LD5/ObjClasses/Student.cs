@@ -6,28 +6,55 @@ using System.Web.UI.WebControls;
 
 namespace LD5
 {
-	public class Student
-	{
+    /// <summary>
+    /// Represents a student with class, name, and group information.
+    /// </summary>
+    public class Student
+    {
+        /// <summary>
+        /// The class name.
+        /// </summary>
         public string ClassName { get; set; }
-        public string LastName { get; set; }
-        public string FirstName { get; set; }
-		public string Group { get; set; }
 
-		public Student(string classname, string lastName, string firstName, string group) 
-		{
-			this.ClassName = classname;
+        /// <summary>
+        /// The last name.
+        /// </summary>
+        public string LastName { get; set; }
+
+        /// <summary>
+        /// The first name.
+        /// </summary>
+        public string FirstName { get; set; }
+
+        /// <summary>
+        /// The group.
+        /// </summary>
+        public string Group { get; set; }
+
+        /// <summary>
+        /// Creates a student with class name, last name, first name, and group.
+        /// </summary>
+        public Student(string classname, string lastName, string firstName, string group)
+        {
+            this.ClassName = classname;
             this.LastName = lastName;
             this.FirstName = firstName;
             this.Group = group;
         }
 
-        public Student(string lastName, string Name, string group) 
+        /// <summary>
+        /// Creates a student with last name, first name, and group.
+        /// </summary>
+        public Student(string lastName, string Name, string group)
         {
-            this.LastName = lastName ;
+            this.LastName = lastName;
             this.FirstName = Name;
             this.Group = group;
         }
 
+        /// <summary>
+        /// Converts the student data to a table row.
+        /// </summary>
         public TableRow ToRow()
         {
             TableRow row = new TableRow();
@@ -38,6 +65,12 @@ namespace LD5
             return row;
         }
 
-
+        /// <summary>
+        /// Returns a string with student data in table format.
+        /// </summary>
+        public override string ToString()
+        {
+            return string.Format($"| {this.ClassName,25} | {this.LastName,25} | {this.FirstName,25} | {this.Group,15} |");
+        }
     }
 }

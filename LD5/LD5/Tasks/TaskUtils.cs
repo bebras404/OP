@@ -11,6 +11,13 @@ namespace LD5
 {
     public static class TaskUtils
     {
+        /// <summary>
+        /// Calculates the workload for each professor.
+        /// Workload = total students in all classes * total credits.
+        /// </summary>
+        /// <param name="profClasses">List of professors with their classes.</param>
+        /// <param name="choises">List of student lists (choices).</param>
+        /// <returns>List of professor workloads.</returns>
         public static List<ProfWorkLoad> CalculateLoad(List<Professor> profClasses, List<StudList> choises)
         {
             return profClasses
@@ -27,6 +34,12 @@ namespace LD5
                 .ToList();
         }
 
+        /// <summary>
+        /// Gets a list of classes for each professor with students in those classes.
+        /// </summary>
+        /// <param name="profs">List of professors.</param>
+        /// <param name="studentsLists">List of student lists.</param>
+        /// <returns>List of professor classes with students.</returns>
         public static List<ProfClassesList> TakeClassesByName(List<Professor> profs, List<StudList> studentsLists)
         {
             List<ProfClassesList> tempList = profs
@@ -37,11 +50,17 @@ namespace LD5
             prof.LastName)).ToList();
 
             return tempList;
-
         }
 
+        /// <summary>
+        /// Finds professors by full name (FirstName LastName).
+        /// Shows alert if input is wrong.
+        /// </summary>
+        /// <param name="Name_LastName">Professor's full name (FirstName LastName).</param>
+        /// <param name="profesors">List of professors.</param>
+        /// <returns>List of professors matching the name.</returns>
         public static List<Professor> FilterProfessorsByName(string Name_LastName, List<Professor> profesors)
-        {   
+        {
             List<Professor> filteredProfessors = new List<Professor>();
             try
             {
@@ -61,15 +80,6 @@ namespace LD5
                   $" {Name_LastName}. Formatas: Vardas Pavardė')</script>"));
             }
             return filteredProfessors;
-
         }
-
-
-
-
-
-
-
-
     }
 }

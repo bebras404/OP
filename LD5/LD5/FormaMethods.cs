@@ -11,10 +11,14 @@ namespace LD5
 {
     public partial class Forma : System.Web.UI.Page
     {
-
+        /// <summary>
+        /// Loads filtered student data into a table and adds it to the given placeholder.
+        /// </summary>
+        /// <param name="classes">List of filtered student classes.</param>
+        /// <param name="header">Table header text.</param>
+        /// <param name="ph">Placeholder to add the table to.</param>
         public void LoadDataToTableStudentAfterFilter(ProfClassesList classes, string header, PlaceHolder ph)
         {
-
             Table table = new Table();
             TableRow headerRow = new TableRow();
             headerRow.Cells.Add(new TableCell() { Text = string.Format(header), ColumnSpan = 4 });
@@ -30,13 +34,16 @@ namespace LD5
                 table.Rows.Add(classes.GetClass(i).ToRow());
             }
             ph.Controls.Add(table);
-
         }
 
-
+        /// <summary>
+        /// Loads student data into a table and adds it to the given placeholder.
+        /// </summary>
+        /// <param name="classes">List of student classes.</param>
+        /// <param name="header">Table header text.</param>
+        /// <param name="ph">Placeholder to add the table to.</param>
         public void LoadDataToTableStudent(StudList classes, string header, PlaceHolder ph)
         {
-
             Table table = new Table();
             TableRow headerRow = new TableRow();
             headerRow.Cells.Add(new TableCell() { Text = string.Format(header), ColumnSpan = 4 });
@@ -47,17 +54,21 @@ namespace LD5
             hRow1.Cells.Add(new TableCell() { Text = "Vardas" });
             hRow1.Cells.Add(new TableCell() { Text = "Grupė" });
             table.Controls.Add(hRow1);
-            for(int i = 0; i < classes.Count(); i++)
+            for (int i = 0; i < classes.Count(); i++)
             {
                 table.Rows.Add(classes.GetClass(i).ToRow());
             }
             ph.Controls.Add(table);
-
         }
 
+        /// <summary>
+        /// Loads professor data into a table and adds it to the given placeholder.
+        /// </summary>
+        /// <param name="classes">List of professors.</param>
+        /// <param name="header">Table header text.</param>
+        /// <param name="ph">Placeholder to add the table to.</param>
         public void LoadDataToTableProfessor(List<Professor> classes, string header, PlaceHolder ph)
         {
-
             Table table = new Table();
             TableRow headerRow = new TableRow();
             headerRow.Cells.Add(new TableCell() { Text = string.Format(header), ColumnSpan = 4 });
@@ -75,9 +86,14 @@ namespace LD5
             ph.Controls.Add(table);
         }
 
+        /// <summary>
+        /// Loads professor workload data into a table and adds it to the given placeholder.
+        /// </summary>
+        /// <param name="loads">List of professor workloads.</param>
+        /// <param name="header">Table header text.</param>
+        /// <param name="ph">Placeholder to add the table to.</param>
         public void LoadDataToTableLoad(List<ProfWorkLoad> loads, string header, PlaceHolder ph)
         {
-
             Table table = new Table();
             TableRow headerRow = new TableRow();
             headerRow.Cells.Add(new TableCell() { Text = string.Format(header), ColumnSpan = 3 });
@@ -94,30 +110,36 @@ namespace LD5
             ph.Controls.Add(table);
         }
 
-        public void LoadSessionData() 
+        /// <summary>
+        /// Loads data from session and fills tables for students, professors, and workloads.
+        /// </summary>
+        public void LoadSessionData()
         {
-            if (Session["students"] != null)
+            try
             {
-                List<StudList> studentsChoises = (List<StudList>)Session["students"];
-                studentsChoises.ForEach(students =>
+                if (Session["students"] != null)
                 {
-                    LoadDataToTableStudent(students, $"Fakultetas: {students.GetFaculty()}", PH1);
-                });
+                    List<StudList> studentsChoises = (List<StudList>)Session["students"];
+                    studentsChoises.ForEach(students =>
+                    {
+                        LoadDataToTableStudent(students, $"Fakultetas: {students.GetFaculty()}", PH1);
+                    });
+                }
+                if (Session["professors"] != null)
+                {
+                    List<Professor> professors = (List<Professor>)Session["professors"];
+                    LoadDataToTableProfessor(professors, "Profesoriai", PH2);
+                }
+                if (Session["Load"] != null)
+                {
+                    List<ProfWorkLoad> LoadCalc = (List<ProfWorkLoad>)Session["Load"];
+                    LoadDataToTableLoad(LoadCalc, "Dėstytojų darbo apkrovos", PH3);
+                }
             }
-            if (Session["professors"] != null)
+            catch (Exception)
             {
-                List<Professor> professors = (List<Professor>)Session["professors"];
-                LoadDataToTableProfessor(professors, "Profesoriai", PH2);
+                HttpContext.Current.Response.Write("<script>alert('Klaida įkeliant sesijos duomenis.')</script>");
             }
-            if (Session["Load"] != null)
-            {
-                List<ProfWorkLoad> LoadCalc = (List<ProfWorkLoad>)Session["Load"];
-                LoadDataToTableLoad(LoadCalc, "Dėstytojų darbo apkrovos", PH3);
-            }
-
         }
-
     }
-
-
 }
