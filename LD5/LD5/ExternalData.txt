@@ -70,3 +70,66 @@ Sandra Čepaitė studentai:
 |        Inžinerinė grafika |             Jakubauskaitė |                      Lina |           ST-21 |
 |        Inžinerinė grafika |                Kazlauskas |                  Deividas |           ST-22 |
 -------------------------------------------------------------------------------------------------------
+Nuskaityti studentų duomenys
+Fakultetas: Informatikos fakultetas
+-------------------------------------------------------------------------------------------------------
+|       Modulio pavadinimas |                   Pavardė |                    Vardas |           Grupė |
+-------------------------------------------------------------------------------------------------------
+|    Programavimo pagrindai |                Jankauskas |                 Mindaugas |           IF-22 |
+|    Programavimo pagrindai |              Kazlauskaitė |                    Simona |           IF-22 |
+|             Duomenų bazės |              Petrauskienė |                     Greta |           IF-21 |
+|                Matematika |                 Petraitis |                     Jonas |           IF-22 |
+|             Duomenų bazės |                Brazauskas |                   Dovydas |           IF-21 |
+|                Matematika |               Kučinskaitė |                    Monika |           IF-22 |
+-------------------------------------------------------------------------------------------------------
+Fakultetas: Statybos fakultetas
+-------------------------------------------------------------------------------------------------------
+|       Modulio pavadinimas |                   Pavardė |                    Vardas |           Grupė |
+-------------------------------------------------------------------------------------------------------
+|        Statybos pagrindai |               Mickevičius |                     Lukas |           ST-21 |
+|      Konstrukcijų analizė |                Mažeikaitė |                     Indrė |           ST-22 |
+|            Statybos teisė |                   Vaitkus |                 Mindaugas |           ST-21 |
+|      Konstrukcijų analizė |                  Jasaitis |                     Tadas |           ST-22 |
+|        Inžinerinė grafika |             Jakubauskaitė |                      Lina |           ST-21 |
+|        Inžinerinė grafika |                Kazlauskas |                  Deividas |           ST-22 |
+-------------------------------------------------------------------------------------------------------
+Fakultetas: Verslo fakultetas
+-------------------------------------------------------------------------------------------------------
+|       Modulio pavadinimas |                   Pavardė |                    Vardas |           Grupė |
+-------------------------------------------------------------------------------------------------------
+|                 Ekonomika |                   Bartkus |                     Matas |           VE-21 |
+|               Marketingas |                   Stonytė |                     Laura |           VE-22 |
+|              Verslo teisė |                  Navickas |                   Andrius |           VE-22 |
+|                 Ekonomika |                  Grigaitė |                       Ema |           VE-21 |
+|              Verslo teisė |                 Rakauskas |                     Tomas |           VE-21 |
+|               Marketingas |               Balčiūnaitė |                      Ieva |           VE-22 |
+-------------------------------------------------------------------------------------------------------
+Nuskaityti dėstytojų duomenys
+-------------------------------------------------------------------------------------------------------
+|       Modulio pavadinimas |                   Pavardė |                    Vardas |  Kreditų kiekis |
+-------------------------------------------------------------------------------------------------------
+|    Programavimo pagrindai |              Stankevičius |                   Paulius | 6               |
+|             Duomenų bazės |                   Čepaitė |                    Sandra | 5               |
+|                Matematika |                  Mačiulis |                   Dainius | 4               |
+|                 Ekonomika |                  Jonaitis |                   Antanas | 6               |
+|               Marketingas |                Navickienė |                   Jolanta | 5               |
+|              Verslo teisė |                    Butkus |                    Valdas | 4               |
+|        Statybos pagrindai |                 Daugirdas |                    Justas | 6               |
+|      Konstrukcijų analizė |                   Vitkutė |                    Monika | 5               |
+|            Statybos teisė |                   Starkus |                   Andrius | 3               |
+|        Inžinerinė grafika |                   Čepaitė |                    Sandra | 4               |
+-------------------------------------------------------------------------------------------------------
+Dėstytojų darbo apkrovos
+---------------------------------------------------------------------------
+|                    Vardas |                   Pavardė |           Grupė |
+---------------------------------------------------------------------------
+|              Stankevičius |                   Paulius | 12              |
+|                   Čepaitė |                    Sandra | 36              |
+|                  Mačiulis |                   Dainius | 8               |
+|                  Jonaitis |                   Antanas | 12              |
+|                Navickienė |                   Jolanta | 10              |
+|                    Butkus |                    Valdas | 8               |
+|                 Daugirdas |                    Justas | 6               |
+|                   Vitkutė |                    Monika | 10              |
+|                   Starkus |                   Andrius | 3               |
+---------------------------------------------------------------------------

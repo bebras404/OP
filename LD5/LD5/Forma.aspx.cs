@@ -43,7 +43,7 @@ namespace LD5
                 studentsChoises = filePaths.Select(path => InOut.ReadStudents(path)).ToList();
                 InOut.WriteToFileStudents(Server.MapPath("~/ExternalData.txt"), studentsChoises, "Nuskaityti studentų duomenys");
             }
-            catch
+            catch (Exception)
             {
                 HttpContext.Current.Response.Write("<script>alert('Klaida skaitant studentų duomenis. Patikrinkite failus AppData aplanke.')</script>");
             }
@@ -52,7 +52,7 @@ namespace LD5
                professors = InOut.ReadProfessors(Server.MapPath("~/ProfData.txt"));
                 InOut.WriteToFileProfessors(Server.MapPath("~/ExternalData.txt"), professors, "Nuskaityti dėstytojų duomenys");
             }
-            catch
+            catch (Exception)
             {
                 HttpContext.Current.Response.Write("<script>alert('Klaida skaitant dėstytojų duomenis. Patikrinkite ProfData.txt failą.')</script>");
                 return;
@@ -74,7 +74,7 @@ namespace LD5
                 LoadCalc = TaskUtils.CalculateLoad(professors, studentsChoises);
                 InOut.WriteToFileWorkLoads(Server.MapPath("~/ExternalData.txt"), LoadCalc, "Dėstytojų darbo apkrovos");
             }
-            catch
+            catch (Exception)
             {
                 HttpContext.Current.Response.Write("<script>alert('Klaida skaičiuojant dėstytojų apkrovą.')</script>");
                 return;
