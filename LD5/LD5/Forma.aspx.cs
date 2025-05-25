@@ -45,10 +45,18 @@ namespace LD5
                 HttpContext.Current.Response.Write("<script>alert('Klaida skaitant studentų duomenis. Patikrinkite failus AppData aplanke.')</script>");
             }
             List<Professor> professors = InOut.ReadProfessors(Server.MapPath("~/ProfData.txt"));
-            studentsChoises.ForEach(students =>
+            try 
             {
-                LoadDataToTableStudent(students, $"Fakultetas: {students.GetFaculty()}", PH1);
-            });
+                studentsChoises.ForEach(students =>
+                {
+                    LoadDataToTableStudent(students, $"Fakultetas: {students.GetFaculty()}", PH1);
+                });
+            }
+            catch
+            {
+                HttpContext.Current.Response.Write("<script>alert('Klaida skaitant dėstytojų duomenis. Patikrinkite ProfData.txt failą.')</script>");
+                return;
+            }       
             LoadDataToTableProfessor(professors, "Profesoriai", PH2);
             Session["students"] = studentsChoises;
             Session["professors"] = professors;
@@ -63,14 +71,12 @@ namespace LD5
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            string Name_LastName = TextBox1.Text;
+            string Name_LastName = TextBox1.Text.Trim();
             List<Professor> filteredProfessors = TaskUtils.FilterProfessorsByName(Name_LastName, (List<Professor>)Session["professors"]);
             List<ProfClassesList> filteredByClass = TaskUtils.TakeClassesByName(filteredProfessors, (List<StudList>)Session["students"]);
             filteredByClass.ForEach(ProfClass => { LoadDataToTableStudentAfterFilter(ProfClass, "Modulio "
                 + ProfClass.GetClassName().ToLower() + " studentai, kuriems dėsto " + ProfClass.GetProffessorName() + " : ", PH4); });
             
-
-
         }
     }
 }

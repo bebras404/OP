@@ -1,7 +1,0 @@
-Informatikos fakultetas
-Matematika;PetrauskasJonas;IF-220222
-Matematika;Jonaitis;Mantas;IF-22222
-Programavimas;Kazlauskas;Tomas;IlF-21222
-Programavimas;Petrauskas;Jonas;IF-2212
-Programavimas;Vaitkus;Paulius;IDSF-2112
-Duomenų bazės;Jankauskas;Marius;IFDS-22

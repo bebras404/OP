@@ -25,12 +25,12 @@ namespace LD5
 					{
                         string[] parts = line.Split(';');
                         string className = parts[0];
-                        string name = parts[1];
-                        string surname = parts[2];
+                        string lastname = parts[1];
+                        string name = parts[2];
                         string group = parts[3];
 
                      
-                        Student student = new Student(className, surname, name, group);
+                        Student student = new Student(className, lastname, name, group);
                         students.AddClass(student);
                     }
 					catch
@@ -60,10 +60,10 @@ namespace LD5
                     {
                         string[] parts = line.Split(';');
                         string className = parts[0];
-                        string name = parts[1];
-                        string surname = parts[2];
+                        string lastname = parts[1];
+                        string name = parts[2];
                         int credits = int.Parse(parts[3]);
-                        Professor professor = new Professor(className, surname, name, credits);
+                        Professor professor = new Professor(className, lastname, name, credits);
                         profs.Add(professor);
                     }
                     catch 

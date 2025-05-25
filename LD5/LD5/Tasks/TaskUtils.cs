@@ -41,10 +41,27 @@ namespace LD5
         }
 
         public static List<Professor> FilterProfessorsByName(string Name_LastName, List<Professor> profesors)
-        {
-            return profesors
-                  .Where(p => (p.FirstName + " " + p.LastName).Equals(Name_LastName, StringComparison.OrdinalIgnoreCase))
-                  .ToList();
+        {   
+            List<Professor> filteredProfessors = new List<Professor>();
+            try
+            {
+                string[] parts = Name_LastName.Split(' ');
+                string name = parts[0];
+                string lastName = parts[1];
+                filteredProfessors = profesors
+                    .Where(prof => prof.FirstName.Equals(name, StringComparison.OrdinalIgnoreCase) &&
+                                   prof.LastName.Equals(lastName, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+
+            }
+            catch
+            {
+                HttpContext.Current.Response.Write(
+                   String.Format($"<script>alert('Neteisingai įvestas dėstytojas" +
+                  $" {Name_LastName}. Formatas: Vardas Pavardė')</script>"));
+            }
+            return filteredProfessors;
+
         }
 
 

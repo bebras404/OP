@@ -1,0 +1,7 @@
+Verslo fakultetas
+Ekonomika;Bartkus;Matas;VE-21
+Marketingas;Stonytė;Laura;VE-22
+Verslo teisė;Navickas;Andrius;VE-22
+Ekonomika;Grigaitė;Ema;VE-21
+Verslo teisė;Rakauskas;Tomas;VE-21
+Marketingas;Balčiūnaitė;Ieva;VE-22

@@ -1,0 +1,7 @@
+Informatikos fakultetas
+Programavimo pagrindai;Jankauskas;Mindaugas;IF-22
+Programavimo pagrindai;Kazlauskaitė;Simona;IF-22
+Duomenų bazės;Petrauskienė;Greta;IF-21
+Matematika;Petraitis;Jonas;IF-22
+Duomenų bazės;Brazauskas;Dovydas;IF-21
+Matematika;Kučinskaitė;Monika;IF-22

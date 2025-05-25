@@ -1,5 +1,10 @@
-Matematika;Matulionis;Dainius;5
-Programavimas;Petrauskienė;Rasa;6
-GGPDF;';;;;
-Duomenų bazės;Matulionis;Dainius;4
-Labs;d;d;wd;s
+Programavimo pagrindai;Stankevičius;Paulius;6
+Duomenų bazės;Čepaitė;Sandra;5
+Matematika;Mačiulis;Dainius;4
+Ekonomika;Jonaitis;Antanas;6
+Marketingas;Navickienė;Jolanta;5
+Verslo teisė;Butkus;Valdas;4
+Statybos pagrindai;Daugirdas;Justas;6
+Konstrukcijų analizė;Vitkutė;Monika;5
+Statybos teisė;Starkus;Andrius;3
+Inžinerinė grafika;Čepaitė;Sandra;4

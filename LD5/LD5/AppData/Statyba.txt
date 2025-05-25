@@ -1,0 +1,7 @@
+Statybos fakultetas
+Statybos pagrindai;Mickevičius;Lukas;ST-21
+Konstrukcijų analizė;Mažeikaitė;Indrė;ST-22
+Statybos teisė;Vaitkus;Mindaugas;ST-21
+Konstrukcijų analizė;Jasaitis;Tadas;ST-22
+Inžinerinė grafika;Jakubauskaitė;Lina;ST-21
+Inžinerinė grafika;Kazlauskas;Deividas;ST-22
